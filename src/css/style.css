@@ -94,6 +94,7 @@
     align-self: stretch;
     flex-basis: auto;
     margin: auto 0;
+    text-decoration: none;
 }
 
 .cta-button {
@@ -152,6 +153,15 @@
 
 .service-link {
     flex-grow: 1;
+    text-decoration: none;
+    color: #232323;
+
+    /* Меню */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .hero-section {
