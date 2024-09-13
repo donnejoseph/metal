@@ -424,7 +424,7 @@
                   <div class="footer-links-row">
                     <div class="footer-links-column">
                       <nav class="footer-links">
-                        <a href="#about" class="footer-link">О компании</a>
+                        <a href="#about" class="footer-link-top">О компании</a>
                         <a href="#services" class="footer-link">Услуги</a>
                         <a href="#contacts" class="footer-link">Контакты</a>
                         <a href="#privacy" class="footer-link"
@@ -437,7 +437,7 @@
                     </div>
                     <div class="footer-links-column">
                       <nav class="footer-links">
-                        <a href="#turning" class="footer-link"
+                        <a href="#turning" class="footer-link-top"
                           >Токарные работы</a
                         >
                         <a href="#milling" class="footer-link"
@@ -492,24 +492,24 @@
     <script>
       $(document).ready(function(){
           $('.owl-carousel').owlCarousel({
-              items: 6, // Показывать 6 элементов одновременно
-              loop: true, // Бесконечная прокрутка
-              margin: 10, // Отступы между элементами
-              nav: false, // Отключение стрелок
-              dots: true, // Включение точек навигации
-              autoplay: true, // Включение автопрокрутки
-              autoplayTimeout: 2000, // Задержка автопрокрутки (2 секунды)
-              autoplayHoverPause: true, // Пауза при наведении курсора
+              items: 6, 
+              loop: true, 
+              margin: 10, 
+              nav: false, 
+              dots: true, 
+              autoplay: true,
+              autoplayTimeout: 2000,
+              autoplayHoverPause: true, 
               responsiveClass: true,
               responsive: {
                   0: {
-                      items: 2, // Показывать 2 элемента на мобильных устройствах
+                      items: 2, 
                   },
                   600: {
-                      items: 4, // Показывать 4 элемента на планшетах
+                      items: 4, 
                   },
                   1000: {
-                      items: 6, // Показывать 6 элементов на десктопах
+                      items: 6,
                   }
               }
           });
