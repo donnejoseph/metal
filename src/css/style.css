@@ -527,6 +527,7 @@
   align-items: center;
   justify-content: center;
   padding-top: 64px;
+  padding-bottom: 60pxg;
 }
 
 @media (max-width: 991px) {
@@ -607,7 +608,6 @@
 }
 .services-images-column {
     flex: 1; 
-    border: 1px solid #ccc; 
     box-sizing: border-box;
     height: 322px;
     position: relative;
@@ -667,7 +667,27 @@
     pointer-events: none; /* Дает возможность кликабельности элементов под градиентом */
     z-index: 2;
   }
-  
+
+.service-image-title {
+    position: absolute;
+    bottom: 12px;
+    left: 10px;
+    z-index: 3;
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+
+}
+
+.services-arrow {
+    position: absolute;
+    bottom: 12px;
+    right: 10px;
+    z-index: 3;
+}
 
 .services-grid {
   display: flex;
