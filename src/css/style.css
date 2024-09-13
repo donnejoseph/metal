@@ -842,6 +842,7 @@
   font-family: Inter, sans-serif;
   width: 575px;
   height: 460px;
+  padding: 40px; 
 }
 
 @media (max-width: 991px) {
@@ -853,8 +854,6 @@
 }
 
 .equipment-title {
-  margin-left: 38px;
-  margin-top: 40px;
   color: #bf1e2e;
   font-size: 34px;
   font-weight: 600;
@@ -864,7 +863,6 @@
 }
 
 .equipment-description {
-  margin-left: 38px;
   color: #000;
   font-size: 16px;
   font-weight: 400;
@@ -1726,3 +1724,25 @@
     padding: 0 20px;
   }
 }
+
+
+
+.owl-carousel .item {
+  height: 100px; /* Установите желаемую высоту */
+  background: #4DC7A0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+}
+
+.owl-carousel {
+  margin-top: 70px;
+  margin-bottom: 40px;
+  width: 100%; /* Карусель на всю ширину */
+
+}
+
+
+
