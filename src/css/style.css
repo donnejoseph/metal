@@ -611,6 +611,11 @@
     box-sizing: border-box;
     height: 322px;
     position: relative;
+    z-index: 6;
+}
+.services-images-column :hover{
+    cursor: pointer;
+
 }
 
 .tokar {
@@ -669,6 +674,7 @@
   }
 
 .service-image-title {
+    user-select: none;
     position: absolute;
     bottom: 12px;
     left: 10px;
