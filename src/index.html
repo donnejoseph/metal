@@ -222,9 +222,9 @@
       <!-- Equipment section starts here -->
       <section class="equipment-section">
         <div class="equipment-content">
-          <div class="equipment-row">
+          <div class="equipment-row-top">
             <div class="equipment-column">
-              <div class="equipment-text">
+              <div class="equipment-text-block">
                 <h2 class="equipment-title">наше оборудование</h2>
                 <p class="equipment-description">
                   Все работы выполняются на новейшем современном оборудовании
@@ -249,23 +249,23 @@
               <img
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/a4eb0ef7b3ea9af32fd94654a44406c33c9996295e09fdd2adb4d99c09a2c841?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
                 alt="Our equipment"
-                class="equipment-image-one"
+                class="equipment-image"
               />
             </div>
           </div>
-          <div class="equipment-row">
+          <div class="equipment-row-bottom">
             <div class="equipment-column">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/a0d3ee0b72021dcb0031cdc1c8c684941ad50647ca4e35cfa9450dcb86199c0c?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
                 alt="Equipment detail 1"
-                class="equipment-image-two"
+                class="equipment-image"
               />
             </div>
             <div class="equipment-column">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/9d5302c41cffde2b50e9d9ec5b622d1f38821e16b424aea76260642efc44bf9b?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
                 alt="Equipment detail 2"
-                class="equipment-image-three"
+                class="equipment-image"
               />
             </div>
           </div>
@@ -287,77 +287,52 @@
       <section class="contact-section" id="contacts">
         <div class="contact-content">
           <h2 class="contact-title">
-            <span style="color: #bf1e2e">Есть вопросы?</span>
+            <span class="questions-?" style="color: #bf1e2e">Есть вопросы?</span>
             <br />
-            <span style="color: #232323">напишите нам</span>
+            <span class="contact-us"  style="color: #232323">напишите нам</span>
           </h2>
           <form class="contact-form">
             <div class="form-container">
-              <div class="form-row">
-                <div class="form-column">
-                  <div class="form-inputs">
-                    <input
-                      type="text"
-                      class="form-input"
-                      placeholder="Ваше имя"
-                      aria-label="Ваше имя"
-                    />
-                    <input
-                      type="tel"
-                      class="form-input-spaced"
-                      placeholder="Телефон"
-                      aria-label="Телефон"
-                    />
-                    <input
-                      type="email"
-                      class="form-input-spaced"
-                      placeholder="E-mail"
-                      aria-label="E-mail"
-                    />
-                  </div>
+              <div class="form-layout">
+                <div class="input-column">
+                  <form class="input-group">
+                    <label for="name" class="visually-hidden">Ваше имя</label>
+                    <input type="text" id="name" class="form-input-top" placeholder="Ваше имя" aria-label="Ваше имя">
+                    <label for="phone" class="visually-hidden">Телефон</label>
+                    <input type="tel" id="phone" class="form-input" placeholder="Телефон" aria-label="Телефон">
+                    <label for="email" class="visually-hidden">E-mail</label>
+                    <input type="email" id="email" class="form-input" placeholder="E-mail" aria-label="E-mail">
+                  </form>
                 </div>
-                <div class="form-column-wide">
-                  <div class="form-column-content">
-                    <textarea
-                      class="form-textarea"
-                      placeholder="Ваш вопрос:"
-                      aria-label="Ваш вопрос"
-                    ></textarea>
-                    <div class="form-checkbox">
-                      <input
-                        type="checkbox"
-                        id="privacy-policy"
-                        class="checkbox-input"
-                      />
-                      <label for="privacy-policy" class="checkbox-label"
-                        >Я согласен с Политикой конфиденциальности</label
-                      >
+                <div class="message-column">
+                  <div class="message-container">
+                    <div class="message-layout">
+                      <div class="textarea-column">
+                        <div class="textarea-group">
+                          <label for="question" class="visually-hidden">Ваш вопрос</label>
+                          <textarea id="question" class="form-textarea" placeholder="Ваш вопрос:" aria-label="Ваш вопрос"></textarea>
+                          <div class="checkbox-group">
+                            <input type="checkbox" id="privacy-policy" class="checkbox" aria-label="Согласие с политикой конфиденциальности">
+                            <label for="privacy-policy" class="checkbox-label">Я согласен с Политикой конфиденциальности</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="info-column">
+                        <div class="info-container">
+                          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f45b3d1b36576e15b1dcbc7fbc51123e3ab313b62fb9e36a5e376538421f41d?placeholderIfAbsent=true&apiKey=6f5ed989a9014907ba5f434cdcea5a48" alt="" class="background-image">
+                          <p class="info-text">Мы ответим на все интересующие вас вопросы в рабочее время:<br>понедельник - пятница с 8:00 до 17:00</p>
+                          <button class="cta-button-question">
+                            <div class="button-content">
+                              <span class="button-text">задать вопрос</span>
+                              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8966d737239198f254143002353bd968f90f093ddf015daf23329789719df9ff?placeholderIfAbsent=true&apiKey=6f5ed989a9014907ba5f434cdcea5a48" alt="" class="button-icon">
+                            </div>
+                          </button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="form-submit-wrapper">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/33455fcc0d862d1f0b19acc0eb1a47ef9c7e99c61bbbd8bf1242b042c1778cbf?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
-                alt="Background pattern"
-                class="form-submit-bg"
-              />
-              <p class="form-submit-text">
-                Мы ответим на все интересующие вас вопросы в рабочее время:
-                <br />
-                понедельник - пятница с 8:00 до 17:00
-              </p>
-              <button type="submit" class="form-submit-button">
-                <span class="form-submit-button-inner">
-                  <span class="form-submit-button-text">задать вопрос</span>
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/8966d737239198f254143002353bd968f90f093ddf015daf23329789719df9ff?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
-                    alt="Arrow icon"
-                    class="form-submit-button-icon"
-                  />
-                </span>
-              </button>
             </div>
           </form>
         </div>
