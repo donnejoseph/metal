@@ -1745,5 +1745,12 @@
 
 }
 
+.container-custom{
+  display: flex;
+  width: 100%;
+  max-width: 1162px;
+  flex-direction: column;
+}
+
 
 
