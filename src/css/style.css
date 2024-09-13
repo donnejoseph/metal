@@ -1012,12 +1012,18 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+
 }
+
 .form-container {
+  background-image: url(/src/img/string.png);
+  background-repeat: no-repeat;
+  background-position: right;
   background-color: #fff;
   width: 100%;
   padding: 0 40px;
 }
+
 @media (max-width: 991px) {
   .form-container {
     max-width: 100%;
@@ -1181,7 +1187,7 @@
 .checkbox-group {
   align-self: start;
   display: flex;
-  margin-top: 10px;
+  margin-top: 15px;
   gap: 20px;
   font-size: 12px;
   color: #232323;
@@ -1232,69 +1238,57 @@
     padding: 0 20px;
   }
 }
-.background-image {
+
+.answer-hours {
   position: absolute;
-  inset: 0;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-.info-text {
-  position: relative;
+  right: 20px;
+  max-width: 307px;
   color: #232323;
-  font-weight: 600;
-  line-height: 22px;
-  margin-right: 24px;
+  font: 600 16px/1.375 Inter, sans-serif;
 }
-@media (max-width: 991px) {
-  .info-text {
-    margin-right: 10px;
-  }
+
+.answer-hours-text {
+  margin-bottom: 67px;
 }
-.cta-button-question {
-  position: relative;
+
+
+
+.question-button {
   border-radius: 34px;
-  background-color: #bf1e2e;
+  background-color: rgba(191, 30, 46, 1);
   display: flex;
-  min-height: 39px;
-  width: 100%;
+  max-width: 330px;
   align-items: center;
   gap: 10px;
   color: #fff;
-  font-weight: 500;
   text-transform: uppercase;
   justify-content: center;
   padding: 8px 40px;
-  border: 2px solid #bf1e2e;
+  font: 500 16px Inter, sans-serif;
+  border: 2px solid rgba(191, 30, 46, 1);
+  text-decoration: none;
 }
-@media (max-width: 991px) {
-  .cta-button-question {
-    margin-top: 40px;
-    padding: 0 20px;
-  }
-}
-.button-content {
-  align-self: stretch;
+
+.question-button-content {
   display: flex;
   align-items: center;
   gap: 10px;
   justify-content: center;
-  margin: auto 0;
 }
-.button-text {
-  align-self: stretch;
-  gap: 10px;
-  margin: auto 0;
+
+.question-button-text {
+  
+  
 }
-.button-icon {
+
+.question-button-icon {
   aspect-ratio: 1;
   object-fit: contain;
   object-position: center;
   width: 24px;
   align-self: stretch;
-  margin: auto 0;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
