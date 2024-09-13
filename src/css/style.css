@@ -67,6 +67,11 @@
   margin: auto 0;
 }
 
+.nav-link-about {
+  text-decoration: none;
+  color: #000;
+}
+
 @media (max-width: 991px) {
   .nav-links {
     max-width: 100%;
