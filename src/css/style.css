@@ -606,17 +606,27 @@
   justify-content: space-between;
   gap: 10px;
 }
-.services-images-column {
-    flex: 1; 
-    box-sizing: border-box;
-    height: 322px;
-    position: relative;
-    z-index: 6;
-}
-.services-images-column :hover{
-    cursor: pointer;
 
+
+.services-images-column {
+  flex: 1; 
+  box-sizing: border-box;
+  height: 322px;
+  position: relative;
+  z-index: 999;
+  transition: box-shadow 0.1s ease, transform 0.1s ease;
+  border: none; /* Убираем любую границу */
+  outline: none; /* Убираем контур */
 }
+
+.services-images-column:hover {
+  cursor: pointer;
+  box-shadow: none; /* Убираем любую тень */
+  transform: scale(1.03); /* Легкое увеличение при наведении */
+}
+
+
+
 
 .tokar {
     height: 250px;
