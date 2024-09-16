@@ -1,519 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Галсервис</title>
+    <!-- Подключение Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
-    <!-- Подключение jQuery (Owl Carousel требует jQuery) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <!-- Подключение JS Owl Carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet" />
   </head>
-
   <body>
-    <section class="main-container">
-      <header class="header">
-        <div class="header-content">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/02cf96c5a44993d34e8a2cb812d3520e6f21efa163eee51bad4441729bbce9a4?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
-            alt="Company Logo"
-            class="logo"
-          />
-          <nav class="nav-links">
-            <a href="/src/about_company.html" class="nav-link-about">О компании</a>
-            <a href="/src/contacts.html" class="nav-link contact-link">Контакты</a>
-            <a href="tel:+79090690888" class="phone-number">+7 909 069 08 88</a>
-            <button class="cta-button">ЗАКАЗАТЬ ЗВОНОК</button>
-          </nav>
-        </div>
-        <div class="red-line"></div>
-        <nav class="service-links">
-          <a href="/src/tokar.html" class="service-link">Токарные работы</a>
-          <a href="#milling" class="service-link">Фрезерные работы</a>
-          <a href="#laser-cutting" class="service-link">Лазерная резка</a>
-          <a href="#plasma-cutting" class="service-link">Плазменная резка</a>
-          <a href="#welding" class="service-link">Сварочные работы</a>
-        </nav>
-      </header>
-      <section class="hero-section">
-        <img
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/073244c10609604561dd1da198d1751841dc50c66cf1aaf9a293dbb39af854f7?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
-          alt="Metal processing background"
-          class="hero-background"
-        />
-        <div class="hero-content">
-          <h1 class="hero-title">услуги металлообработки</h1>
-          <div class="hero-subtitle">
-            <span class="hero-subtitle-text">доставка по всей россии</span>
-            <div class="hero-subtitle-line"></div>
-          </div>
-          <div class="hero-cta">
-            <div class="cta-primary-wrapper button-order">
-              <button class="cta-primary">
-                <span class="cta-primary-text">ОСТАВИТЬ ЗАЯВКУ</span>
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/dbb72066ef609985da8a6d096170c22f01131c950555412a48814659a8bdcf34?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
-                  alt="Arrow icon"
-                  class="cta-primary-icon"
-                />
-              </button>
-            </div>
-            <button class="cta-secondary">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/a1c6cab3bde3284d7e64f03a21641c193902699bf9a562b3de066f9274e0d213?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
-                alt="Email icon"
-                class="cta-secondary-icon"
-              />
+    <header>
+      <div class="container mb-3 navbar-relative">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary mobile-menu ">
+          <div class="container">
+           
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
           </div>
+        </nav>
+        <div class="row align-items-center top-menu-row">
+          <div class="col-3">
+            <img src="img/logo.png" alt="Логотип компании" class="logo" />
+            
+          </div>
+          <div class="col-2 d-flex align-items-center justify-content-center">
+            <div class="custom-menu">
+              <a href="#">О компании</a>
+            </div>
+          </div>
+          <div class="col-2 d-flex align-items-center justify-content-center">
+            <div class="custom-menu">
+              <a href="#">Контакты</a>
+            </div>
+          </div>
+          <div class="col-2 d-flex align-items-center justify-content-center">
+            <div class="custom-menu">
+              <a href="#">+7 909 069 08 88</a>
+            </div>
+          </div>
+          <div class="col-3 d-flex align-items-center justify-content-end">
+            <button class="btn btn-primary cta-button cta-button-desktop">Заказать звонок</button>
+          </div>
+          <!--Mobile menu start-->
+          <!--Mobile menu end-->
         </div>
-      </section>
-      <section class="about-section" id="about">
-        <h2 class="about-title">
-          <span style="color: #bf1e2e">более 10 лет опыта</span>
-          <br />
-          <span style="color: #232323">в области обработки металла</span>
-        </h2>
-        <div class="about-content">
-          <div class="about-row">
-            <div class="about-column">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/080ae42c5f52d7928e52e1bdd4a4e5104d28724c1a0cc064f6e7424dc98e6067?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
-                alt="Metal processing equipment"
-                class="about-image"
-              />
-            </div>
-            <div class="about-column">
-              <p class="about-text">
-                Nulla viverra in sociis nec mauris sodales aenean pellentesque.
-                Scelerisque non vel lacinia integer convallis donec. Ultricies
-                donec mollis faucibus ornare sit tempor gravida dolor. Ipsum
-                duis consectetur purus pharetra viverra ultrices morbi vel.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="about-content">
-          <div class="about-row">
-            <div class="about-column">
-              <p class="about-text">
-                Lorem ipsum dolor sit amet consectetur. Duis at pellentesque
-                arcu ac adipiscing interdum. Cras egestas sem cursus quis
-                scelerisque odio venenatis nec enim. Nisl euismod eget quisque
-                platea magnis in. Habitant erat mauris varius non metus
-                vulputate.
-              </p>
-            </div>
-            <div class="about-column">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/b733a26cc439b492f71b292d229dc90c2b08b3d434b514be35ca08f6eb586596?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
-                alt="Metal processing process"
-                class="about-image"
-              />
-            </div>
-          </div>
-        </div>
-        <button class="about-cta">
-          <span class="about-cta-wrapper">
-            <span class="about-cta-inner">
-              <span class="about-cta-text">подробнее о компании</span>
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/55b4085fc96d318e9160d49ca75b660f08dce2238392ffdce8fcd3f386997923?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
-                alt="Arrow icon"
-                class="about-cta-icon"
-              />
-            </span>
-          </span>
-        </button>
-      </section>
-      <!-- Services section  starts here-->
-      <section class="services-section">
-        <!-- Services content starts here -->
-        <div class="services-content">
-          <div class="services-header-container">
-            <div class="services-column">
-              <h2 class="services-title">Наши услуги</h2>
-            </div>
-            <div class="services-column">
-              <p class="services-description">
-                Огромный опыт и команда специалистов позволяют нам предложить
-                качественные услуги по конкурентной цене
-              </p>
-            </div>
-          </div>
-          <div class="services-section-space"></div>
-          <div class="services-images-container">
-            <div class="services-images-column">
-              <div class="tokar"></div>
-              <div class="services-images-gradient"></div>
-              <div class="service-image-text">
-                <span class="service-image-title">ТОКАРНЫЕ<br />РАБОТЫ</span>
-              </div>
-              <img
-                src="/src/img/arrow.png"
-                class="services-arrow"
-                alt="Arrow icon"
-              />
-            </div>
-            <div class="services-images-column">
-              <div class="frezer"></div>
-              <div class="services-images-gradient"></div>
-              <div class="service-image-text">
-                <span class="service-image-title">ФРЕЗЕРНЫЕ<br />РАБОТЫ</span>
-              </div>
-              <img
-                src="/src/img/arrow.png"
-                class="services-arrow"
-                alt="Arrow icon"
-              />
-            </div>
-            <div class="services-images-column">
-              <div class="svarka"></div>
-              <div class="services-images-gradient"></div>
-              <div class="service-image-text">
-                <span class="service-image-title">СВАРОЧНЫЕ<br />РАБОТЫ</span>
-              </div>
-              <img
-                src="/src/img/arrow.png"
-                class="services-arrow"
-                alt="Arrow icon"
-              />
-            </div>
-            <div class="services-images-column">
-              <div class="laser"></div>
-              <div class="services-images-gradient"></div>
-              <div class="service-image-text">
-                <span class="service-image-title"
-                  >ЛАЗЕРНАЯ<br />РЕЗКА МЕТАЛЛА</span
-                >
-              </div>
-              <img
-                src="/src/img/arrow.png"
-                class="services-arrow"
-                alt="Arrow icon"
-              />
-            </div>
-            <div class="services-images-column">
-              <div class="plasma"></div>
-              <div class="services-images-gradient"></div>
-              <div class="service-image-text">
-                <span class="service-image-title"
-                  >ПЛАЗМЕННАЯ<br />РЕЗКА МЕТАЛЛА</span
-                >
-              </div>
-              <img
-                src="/src/img/arrow.png"
-                class="services-arrow"
-                alt="Arrow icon"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Equipment section starts here -->
-      <section class="equipment-section">
-        <div class="equipment-content">
-          <div class="equipment-row-top">
-            <div class="equipment-column">
-              <div class="equipment-text-block">
-                <h2 class="equipment-title">наше оборудование</h2>
-                <p class="equipment-description">
-                  Все работы выполняются на новейшем современном оборудовании
-                  "Наименование"
-                  <br /><br />
-                  Описание количества и характеристик станков.
-                  <br /><br />
-                  Duis at pellentesque arcu ac adipiscing interdum. Cras egestas
-                  sem cursus quis scelerisque odio venenatis nec enim. Nisl
-                  euismod eget quisque platea magnis in. Habitant erat mauris
-                  varius non metus vulputate.
-                  <br /><br />
-                  Lorem ipsum dolor sit amet consectetur. Duis at pellentesque
-                  arcu ac adipiscing interdum. Cras egestas sem cursus quis
-                  scelerisque odio venenatis nec enim. Nisl euismod eget quisque
-                  platea magnis in. Habitant erat mauris varius non metus
-                  vulputate.
-                </p>
-              </div>
-            </div>
-            <div class="equipment-column">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/a4eb0ef7b3ea9af32fd94654a44406c33c9996295e09fdd2adb4d99c09a2c841?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
-                alt="Our equipment"
-                class="equipment-image"
-              />
-            </div>
-          </div>
-          <div class="equipment-row-bottom">
-            <div class="equipment-column">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/a0d3ee0b72021dcb0031cdc1c8c684941ad50647ca4e35cfa9450dcb86199c0c?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
-                alt="Equipment detail 1"
-                class="equipment-image"
-              />
-            </div>
-            <div class="equipment-column">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/9d5302c41cffde2b50e9d9ec5b622d1f38821e16b424aea76260642efc44bf9b?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
-                alt="Equipment detail 2"
-                class="equipment-image"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="clients-section">
-        <h2 class="clients-title">Наши клиенты</h2>
-
-        <div class="owl-carousel owl-theme">
-          <div class="item"><h4>Logo1</h4></div>
-        <div class="item"><h4>Logo2</h4></div>
-        <div class="item"><h4>Logo3</h4></div>
-        <div class="item"><h4>Logo4</h4></div>
-        <div class="item"><h4>Logo5</h4></div>
-        <div class="item"><h4>Logo6</h4></div>
-        <div class="item"><h4>Logo7</h4></div>
-        <div class="item"><h4>Logo8</h4></div>
-        <div class="item"><h4>Logo5</h4></div>
-        <div class="item"><h4>Logo6</h4></div>
-        <div class="item"><h4>Logo7</h4></div>
-        <div class="item"><h4>Logo8</h4></div>
-          <!-- Добавьте столько элементов, сколько вам нужно -->
       </div>
-      </section>
-      <section class="contact-section" id="contacts">
-        <div class="contact-content">
-          <h2 class="contact-title">
-            <span class="questions-?" style="color: #bf1e2e">Есть вопросы?</span>
-            <br />
-            <span class="contact-us"  style="color: #232323">напишите нам</span>
-          </h2>
-          <form class="contact-form">
-            <div class="form-container">
-              <div class="form-layout">
-                <div class="input-column">
-                  <form class="input-group">
-                    <label for="name" class="visually-hidden">Ваше имя</label>
-                    <input type="text" id="name" class="form-input-top" placeholder="Ваше имя" aria-label="Ваше имя">
-                    <label for="phone" class="visually-hidden">Телефон</label>
-                    <input type="tel" id="phone" class="form-input" placeholder="Телефон" aria-label="Телефон">
-                    <label for="email" class="visually-hidden">E-mail</label>
-                    <input type="email" id="email" class="form-input-bottom" placeholder="E-mail" aria-label="E-mail">
-                  </form>
-                </div>
-                <div class="message-column">
-                  <div class="message-container">
-                    <div class="message-layout">
-                      <div class="textarea-column">
-                        <div class="textarea-group">
-                          <label for="question" class="visually-hidden">Ваш вопрос</label>
-                          <textarea id="question" class="form-textarea" placeholder="Ваш вопрос:" aria-label="Ваш вопрос"></textarea>
-                          <div class="checkbox-group">
-                            <input type="checkbox" id="privacy-policy" class="checkbox" aria-label="Согласие с политикой конфиденциальности">
-                            <label for="privacy-policy" class="checkbox-label">Я согласен с Политикой конфиденциальности</label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="info-column">
-                        <div class="info-container">
-                          <div class="answer-hours">
-                            <p style="white-space: normal;" class="answer-hours-text">
-                              Мы ответим на все интересующие вас вопросы в рабочее время: <span style="white-space: nowrap;">понедельник - пятница с 8:00 до 17:00</span>
-                            </p>
-                            <a href="#" class="question-button" role="button">
-                              <div class="question-button-content">
-                                <span class="question-button-text">задать вопрос</span>
-                                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8966d737239198f254143002353bd968f90f093ddf015daf23329789719df9ff?placeholderIfAbsent=true&apiKey=6f5ed989a9014907ba5f434cdcea5a48" alt="" class="question-button-icon" />
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <div class="container-fluid red-line"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="custom-menu custom-menu-bottom custom-menu-bottom-tokar">
+              <a href="#">Токарные работы</a>
             </div>
-          </form>
+          </div>
+          <div class="col">
+            <div class="custom-menu custom-menu-bottom">
+              <a href="#">Фрезерные работы</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="custom-menu custom-menu-bottom">
+              <a href="#">Лазерная резка</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="custom-menu custom-menu-bottom">
+              <a href="#">Плазменная резка</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="custom-menu custom-menu-bottom">
+              <a href="#">Сварочные работы</a>
+            </div>
+          </div>
         </div>
-      </section>
-      <section class="location-section">
-        <div class="location-content">
-          <div class="location-row">
-            <div class="location-column">
-              <div class="location-info">
-                <h2 class="location-title">контакты</h2>
-                <p class="location-company">ООО "ГАЛСЕРВИС"</p>
-                <div class="location-contact">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/9bb7f92aa743d2bcf99b6d7f364529c833883b3f389ebb39c6e3043b51b98046?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
-                    alt="Phone icon"
-                    class="location-icon"
-                  />
-                  <div class="location-contact-details">
-                    <p>+7 909 069 08 88</p>
-                    <p>+7 3513 69 40 19</p>
-                  </div>
-                </div>
-                <div class="location-email">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/d96fb7d2658eb35784f4f81b0160072d8f9fe4e7198f5bfa833b42322271102d?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
-                    alt="Email icon"
-                    class="location-icon"
-                  />
-                  <p>gal-service@yandex.ru</p>
-                </div>
-                <div class="location-address">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/fb90ec83b05848351d015d39fffd85ef094402bc9dc27feab189cc42db75a82e?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
-                    alt="Location icon"
-                    class="location-icon"
-                  />
-                  <p class="location-address-text">
-                    456208, Челябинская область, г. Златоуст, ул. Тульская 1 - 9
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container-fluid hero-image">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1 class="hero-title">услуги<br>металлообработки</h1>
+              <div class="row">
+                <div class="col-5">
+                  <p class="hero-description">
+                    доставка по всей россии
                   </p>
                 </div>
-              </div>
-            </div>
-            <div class="location-map-column">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/ddb4172491177607785950479c8f54af82e1c8e914315c7abf1d7dbaf25c6485?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
-                alt="Location map"
-                class="location-map"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <footer class="footer">
-        <div class="footer-content">
-          <div class="footer-wrapper">
-            <div class="footer-row">
-              <div class="footer-column-narrow">
-                <div class="footer-logo-wrapper">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/16ca6a3619fac1916e8ba9735f86c353cbb0431b462820c7c035441963b0ab29?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
-                    alt="Company Logo"
-                    class="logo"
-                  />
-                  <div class="footer-contact">
-                    <p class="footer-phone">+7 909 069 08 88</p>
-                    <p class="footer-email">gal-service@yandex.ru</p>
-                  </div>
+                <div class="col-7">
+                  <div class="hero-description-line"></div>
                 </div>
               </div>
-              <div class="footer-column-wide">
-                <div class="footer-links-wrapper">
-                  <div class="footer-links-row">
-                    <div class="footer-links-column">
-                      <nav class="footer-links">
-                        <a href="#about" class="footer-link-top">О компании</a>
-                        <a href="#services" class="footer-link">Услуги</a>
-                        <a href="#contacts" class="footer-link">Контакты</a>
-                        <a href="#privacy" class="footer-link"
-                          >Политика конфиденциальности</a
-                        >
-                        <a href="#callback" class="footer-link"
-                          >Заказать звонок</a
-                        >
-                      </nav>
-                    </div>
-                    <div class="footer-links-column">
-                      <nav class="footer-links">
-                        <a href="#turning" class="footer-link-top"
-                          >Токарные работы</a
-                        >
-                        <a href="#milling" class="footer-link"
-                          >Фрезерные работы</a
-                        >
-                        <a href="#welding" class="footer-link"
-                          >Сварочные работы</a
-                        >
-                        <a href="#laser-cutting" class="footer-link"
-                          >Лазерная резка металла</a
-                        >
-                        <a href="#plasma-cutting" class="footer-link"
-                          >Плазменная резка металла</a
-                        >
-                      </nav>
-                    </div>
-                    <div class="footer-form-column">
-                      <form class="footer-form">
-                        <label for="footer-name" class="visually-hidden"
-                          >Имя</label
-                        >
-                        <input
-                          type="text"
-                          id="footer-name"
-                          class="footer-form-input"
-                          placeholder="Имя"
-                        />
-                        <div class="footer-form-line"></div>
-                        <label for="footer-phone" class="visually-hidden"
-                          >Телефон</label
-                        >
-                        <input
-                          type="tel"
-                          id="footer-phone"
-                          class="footer-form-input"
-                          placeholder="Телефон"
-                        />
-                        <div class="footer-form-line"></div>
-                        <button type="submit" class="footer-form-button">
-                          ЗАКАЗАТЬ ЗВОНОК
-                        </button>
-                      </form>
-                    </div>
-                  </div>
+             <div class="row">
+              <div class="col">
+                <button class="btn btn-primary cta-button cta-button-hero">                
+                  <span class="cta-button-text">Оставить заявку</span><i class="fas fa-arrow-right button-arrow"></i>
+                </button>
+              </div>
+              <div class="col d-flex justify-content-end">
+                <div class="mail-icon">
+                  <i class="fas fa-envelope"></i>
                 </div>
               </div>
+             </div>
+              
             </div>
           </div>
-        </div>
-      </footer>
+      </div>
+      </div>
     </section>
-    <script>
-      $(document).ready(function(){
-          $('.owl-carousel').owlCarousel({
-              items: 6, 
-              loop: true, 
-              margin: 10, 
-              nav: false, 
-              dots: true, 
-              autoplay: true,
-              autoplayTimeout: 2000,
-              autoplayHoverPause: true, 
-              responsiveClass: true,
-              responsive: {
-                  0: {
-                      items: 2, 
-                  },
-                  600: {
-                      items: 4, 
-                  },
-                  1000: {
-                      items: 6,
-                  }
-              }
-          });
-      });
-  </script>
+    
+
+    <!-- Подключение Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

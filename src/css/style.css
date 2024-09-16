@@ -2196,3 +2196,231 @@ p {
   }
 }
 
+h1 {
+  color: #fff;
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+  z-index: 100;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  overflow-x: hidden; /* Прячем горизонтальный скролл */
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.custom-menu a {
+  color: #232323;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.logo {
+  margin-left: 0; /* Убираем отрицательный отступ */
+}
+
+.cta-button {
+  margin-right: 0; /* Убираем отрицательный отступ */
+  align-self: stretch;
+  border-radius: 34px;
+  background-color: transparent;
+  min-height: 39px;
+  gap: 10px;
+  padding: 10px 40px;
+  border: 2px solid #bf1e2e;
+  --bs-btn-color: #000000;
+}
+
+.cta-button:hover {
+  background-color: #bf1e2e;
+  color: white;
+  border: 2px solid #bf1e2e;
+}
+
+.red-line {
+  background-color: #bf1e2e;
+  height: 4px;
+  margin-bottom: 10px;
+}
+
+.custom-menu-bottom {
+  margin-bottom: 13px;
+}
+
+.custom-menu-bottom-tokar {
+  margin-left: 25px;
+}
+
+.hero-image {
+  position: relative;
+  height: 70vh; /* Процентное значение для адаптации к экрану */
+  background-image: url(../img/hero.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.hero-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-image .container {
+  position: relative;
+  z-index: 2;
+  padding-left: 15px; /* Добавляем отступ, чтобы контент не был обрезан */
+  padding-right: 15px; /* Добавляем отступ справа для симметрии */
+}
+
+.hero-title {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  margin-top: 205px;
+  margin-bottom: 42px;
+}
+
+.hero-description {
+  color: #fff;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 94px;
+}
+
+.cta-button-hero {
+  width: 100%; /* Меняем фиксированную ширину на 100% для адаптации к ширине экрана */
+  color: #fff;
+  max-width: 330px; /* Максимальная ширина для больших экранов */
+}
+
+.button-arrow {
+  transform: rotate(45deg);
+  padding-left: 4px;
+}
+
+.cta-button-text {
+  margin-right: 45px;
+}
+
+.hero-description-line {
+  background-color: #bf1e2e;
+  border: 3px solid #bf1e2e;
+  height: 34px;
+  width: 3px;
+  margin-left: 0; /* Убираем отрицательный отступ */
+}
+
+.mail-icon {
+  border: #bf1e2e solid 3px;
+  border-radius: 45px;
+  height: 37px;
+  padding: 4px 20px;
+}
+
+.fa,
+.fas {
+  color: #fff;
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+  .hero-description-line {
+    margin-left: 0; /* Убираем отрицательный отступ */
+  }
+}
+
+/* Медиа-запросы для разных разрешений */
+
+/* Для планшетов в альбомной ориентации и небольших ноутбуков (от 769px до 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  /* Дополнительные стили, если необходимо */
+}
+
+/* Для настольных компьютеров и больших экранов (от 993px и выше) */
+@media (min-width: 993px) {
+  /* Дополнительные стили, если необходимо */
+}
+
+/* Для планшетов в портретной ориентации (от 577px до 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .hero-title {
+    font-size: 36px;
+  }
+}
+
+/* Для мобильных устройств (до 576px) */
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-description,
+  .mail-icon,
+  .hero-description-line,
+  .custom-menu,
+  .cta-button-desktop, .red-line{
+    display: none;
+  }
+
+  .cta-button-hero {
+    width: 100%; /* Изменяем ширину на 100% для адаптации к экрану */
+  }
+
+  .cta-button-text {
+    margin-right: 0px;
+  }
+
+  .hero-image {
+    margin-top: 100px;
+    height: 70vh;
+  }
+
+  .top-menu-row {
+    left: 0; /* Убираем потенциальный сдвиг влево */
+    right: 0; /* Центрируем меню */
+  }
+
+  .navbar-relative {
+    position: relative;
+  }
+
+  .mobile-menu {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .navbar .container {
+    flex-direction: row-reverse;
+  }
+  .hero{
+      margin-top: -90px;
+  }
+}
