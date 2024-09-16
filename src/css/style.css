@@ -1605,7 +1605,7 @@
   height: 24px;
 }
 
-.location-section {
+.location-section-page3 {
   background-color: #ffffff;
   display: flex;
   width: 100%;
@@ -1636,8 +1636,20 @@
   color: #000;
 }
 
-.location-address-text {
+.location-address-text-page3 {
   color: #000;
+}
+
+p {
+  color: #ffffff;
+}
+
+.location-address-text {
+  color: #fff;
+}
+
+.answer-hours-text{
+ color: #232323;
 }
 
 
