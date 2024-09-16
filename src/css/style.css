@@ -1605,6 +1605,41 @@
   height: 24px;
 }
 
+.location-section {
+  background-color: #ffffff;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 62px;
+}
+
+.location-title-page3 {
+  color: #BF1E2E;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: -0.68px;
+  text-transform: uppercase;
+}
+
+.location-company-page3 {
+  color: #000;
+  margin-top: 60px;
+}
+
+.location-phone{
+  color: #000;
+}
+
+.location-email {
+  color: #000;
+}
+
+.location-address-text {
+  color: #000;
+}
+
 
 /*tablet*/
 
@@ -2063,3 +2098,4 @@
     display: none;
   }
 }
+
