@@ -10,16 +10,15 @@ h1 {
 
 header {
   position: relative;
-  margin-bottom: 39px;
+  margin-bottom: 12px;
 }
-
 
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f5f5f5;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 .mobile-menu {
@@ -39,8 +38,8 @@ body {
   padding: 10px 34px;
   color: #fff;
   border-radius: 34px;
-  background-color: #BF1E2E; 
-  transform: scale(1.0);
+  background-color: #bf1e2e;
+  transform: scale(0);
 }
 
 .custom-menu-number a {
@@ -52,7 +51,6 @@ body {
   text-decoration: none;
 }
 
-
 .custom-menu-bottom-works a {
   color: #232323;
   font-size: 16px;
@@ -60,26 +58,23 @@ body {
   font-weight: 500;
   line-height: normal;
   text-decoration: none;
-  display: inline-block;
-  padding: 5px;
+
   white-space: nowrap;
-  position: absolute;
-  z-index: 2;
 }
 
 .custom-menu-bottom-works a:hover {
-  transform: scale(1);
+  padding: 16px 36px;
+  transform: scale(0);
   border-radius: 0px;
-  background-color: #BF1E2E; 
+  background-color: #bf1e2e;
 }
 
-
 .logo {
-  margin-left: 0; 
+  margin-left: 0;
 }
 
 .cta-button {
-  margin-right: 0; 
+  margin-right: 0;
   align-self: stretch;
   border-radius: 34px;
   background-color: transparent;
@@ -99,7 +94,7 @@ body {
 .red-line {
   background-color: #bf1e2e;
   height: 4px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .custom-menu-bottom {
@@ -107,7 +102,6 @@ body {
 }
 
 .custom-menu-bottom-tokar {
-  margin-left: 25px;
 }
 
 .hero-image {
@@ -135,8 +129,8 @@ body {
 .hero-image .container {
   position: relative;
   z-index: 2;
-  padding-left: 15px; 
-  padding-right: 15px; 
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .hero-title {
@@ -161,7 +155,7 @@ body {
 .cta-button-hero {
   width: 100%;
   color: #fff;
-  max-width: 330px; 
+  max-width: 330px;
 }
 
 .button-arrow {
@@ -178,7 +172,7 @@ body {
   border: 3px solid #bf1e2e;
   height: 34px;
   width: 3px;
-  margin-left: 0px; 
+  margin-left: 0px;
 }
 
 .mail-icon {
@@ -188,20 +182,40 @@ body {
   padding: 4px 20px;
 }
 
-.fa,
-.fas {
-  color: #fff;
-}
 .parent {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  } 
+  margin-bottom: 40px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  background-image: url("../img/services_image_one.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+  padding: 60px 20px;
+}
+.div3 {
+  grid-area: 2 / 1 / 3 / 2;
+  padding: 60px 20px;
+}
+.div4 {
+  grid-area: 2 / 2 / 3 / 3;
+  background-image: url("../img/services_image_two.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 .info-title {
-  color: #BF1E2E;
+  color: #bf1e2e;
   font-family: Inter;
   font-size: 34px;
   font-style: normal;
@@ -222,12 +236,9 @@ body {
 }
 
 .info-description1 {
-  margin-top: 53px;
-  margin-left: 29px;
 }
 
 .info-description2 {
-  margin-top: 80px;
 }
 
 .company-info-button {
@@ -241,12 +252,12 @@ body {
   text-transform: uppercase;
   padding: 8px 39px;
   font: 500 16px Inter, sans-serif;
-  border: 2px solid #BF1E2E;
+  border: 2px solid #bf1e2e;
   cursor: pointer;
-  width: 330px; 
-  height: 39px; 
+  width: 330px;
+  height: 39px;
   box-sizing: border-box;
-  margin-left: auto; 
+  margin-left: auto;
 }
 
 .info-img2 {
@@ -258,8 +269,8 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 100%; 
-  height: 100%; 
+  width: 100%;
+  height: 100%;
 }
 
 .button-text {
@@ -271,12 +282,6 @@ body {
   width: 24px;
   height: 24px;
 }
-
-
-
-
-
-
 
 @media (min-width: 992px) and (max-width: 1400px) {
   .hero-description-line {
@@ -371,7 +376,7 @@ body {
     border: none; /* Убираем границу */
     outline: none; /* Убираем обводку при фокусе */
     box-shadow: none; /* Убираем тень */
-    color: transparent;/* Цвет текста кнопки-бургера */
+    color: transparent; /* Цвет текста кнопки-бургера */
   }
 
   .navbar-toggler-icon {
