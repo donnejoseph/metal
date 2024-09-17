@@ -8,12 +8,18 @@ h1 {
   z-index: 100;
 }
 
+header {
+  position: relative;
+  margin-bottom: 39px;
+}
+
+
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f5f5f5;
-  overflow-x: hidden; /* Прячем горизонтальный скролл */
+  overflow-x: hidden; 
 }
 
 .mobile-menu {
@@ -29,12 +35,51 @@ body {
   text-decoration: none;
 }
 
+.custom-menu a:hover {
+  padding: 10px 34px;
+  color: #fff;
+  border-radius: 34px;
+  background-color: #BF1E2E; 
+  transform: scale(1.0);
+}
+
+.custom-menu-number a {
+  color: #232323;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+
+
+.custom-menu-bottom-works a {
+  color: #232323;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+  white-space: nowrap;
+  position: absolute;
+  z-index: 2;
+}
+
+.custom-menu-bottom-works a:hover {
+  transform: scale(1);
+  border-radius: 0px;
+  background-color: #BF1E2E; 
+}
+
+
 .logo {
-  margin-left: 0; /* Убираем отрицательный отступ */
+  margin-left: 0; 
 }
 
 .cta-button {
-  margin-right: 0; /* Убираем отрицательный отступ */
+  margin-right: 0; 
   align-self: stretch;
   border-radius: 34px;
   background-color: transparent;
@@ -66,8 +111,9 @@ body {
 }
 
 .hero-image {
+  margin-bottom: 117px;
+  height: 700px;
   position: relative;
-  height: 70vh; /* Процентное значение для адаптации к экрану */
   background-image: url(../img/hero.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -89,8 +135,8 @@ body {
 .hero-image .container {
   position: relative;
   z-index: 2;
-  padding-left: 15px; /* Добавляем отступ, чтобы контент не был обрезан */
-  padding-right: 15px; /* Добавляем отступ справа для симметрии */
+  padding-left: 15px; 
+  padding-right: 15px; 
 }
 
 .hero-title {
@@ -113,9 +159,9 @@ body {
 }
 
 .cta-button-hero {
-  width: 100%; /* Меняем фиксированную ширину на 100% для адаптации к ширине экрана */
+  width: 100%;
   color: #fff;
-  max-width: 330px; /* Максимальная ширина для больших экранов */
+  max-width: 330px; 
 }
 
 .button-arrow {
@@ -132,13 +178,13 @@ body {
   border: 3px solid #bf1e2e;
   height: 34px;
   width: 3px;
-  margin-left: 0; /* Убираем отрицательный отступ */
+  margin-left: 0px; 
 }
 
 .mail-icon {
   border: #bf1e2e solid 3px;
-  border-radius: 45px;
-  height: 37px;
+  border-radius: 34px;
+  height: 39px;
   padding: 4px 20px;
 }
 
@@ -153,6 +199,82 @@ body {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   } 
+
+.info-title {
+  color: #BF1E2E;
+  font-family: Inter;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.68px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.info-span {
+  color: #232323;
+}
+
+.info-img {
+  width: 571px;
+  height: 200px;
+}
+
+.info-description1 {
+  margin-top: 53px;
+  margin-left: 29px;
+}
+
+.info-description2 {
+  margin-top: 80px;
+}
+
+.company-info-button {
+  margin-bottom: 120px;
+  border-radius: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #000;
+  text-transform: uppercase;
+  padding: 8px 39px;
+  font: 500 16px Inter, sans-serif;
+  border: 2px solid #BF1E2E;
+  cursor: pointer;
+  width: 330px; 
+  height: 39px; 
+  box-sizing: border-box;
+  margin-left: auto; 
+}
+
+.info-img2 {
+  margin-bottom: 40px;
+}
+
+.button-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%; 
+  height: 100%; 
+}
+
+.button-text {
+  flex: 1;
+  white-space: nowrap;
+}
+
+.button-icon {
+  width: 24px;
+  height: 24px;
+}
+
+
+
+
 
 
 
