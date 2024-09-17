@@ -146,6 +146,15 @@ body {
 .fas {
   color: #fff;
 }
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  } 
+
+
 
 @media (min-width: 992px) and (max-width: 1400px) {
   .hero-description-line {
@@ -240,7 +249,7 @@ body {
     border: none; /* Убираем границу */
     outline: none; /* Убираем обводку при фокусе */
     box-shadow: none; /* Убираем тень */
-    color: #bf1e2e; /* Цвет текста кнопки-бургера */
+    color: transparent;/* Цвет текста кнопки-бургера */
   }
 
   .navbar-toggler-icon {
