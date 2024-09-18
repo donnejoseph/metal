@@ -7,7 +7,10 @@ h1 {
   text-transform: uppercase;
   z-index: 100;
 }
-
+.custom-col{
+  flex: 0 0 20%;
+  max-width: 20%;
+}
 header {
   position: relative;
   margin-bottom: 12px;
@@ -285,6 +288,7 @@ body {
 
 .services-section {
   background-color: #ECEFF3;
+  padding-bottom: 60px;
 }
 
 h3 {
@@ -308,17 +312,77 @@ h3 {
   margin-top: 60px;
 }
 
-.col-3 {
-  padding-right: 0;
-  width: 20.666667%;
+.img-box-tokar{
+  position: relative;
+  background-image: url("../img/tokar.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 322px;
+  cursor: pointer;
 }
 
-.col-2 {
-  padding-left: 10px;
-  padding-right: 0;
+.img-box-frez{
+  position: relative;
+  background-image: url("../img/frezer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 322px;
+  cursor: pointer;
+}
+
+.img-box-laser{
+  position: relative;
+  background-image: url("../img/laser.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 322px;
+  cursor: pointer;
+}
+
+.img-box-svar{
+  position: relative;
+  background-image: url("../img/svar.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 322px;
+  cursor: pointer;
+}
+
+.img-box-plaz{
+  position: relative;
+  background-image: url("../img/plasma.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 322px;
+  cursor: pointer;
 }
 
 
+.services-text {
+  color: #ffffff;
+  font-size: 20px;  
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+}
+.services-arrow {
+  width: 24px; 
+  height: 24px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M7 7L17 17' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M17 7V17H7' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-size: cover;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+}
 
 
 
@@ -362,6 +426,15 @@ h3 {
   .red-line {
     display: none;
   }
+  .custom-col{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .img-box-frez, .img-box-laser, .img-box-svar, .img-box-plaz, .img-box-tokar{
+    height: 200px;
+    margin-bottom: 10px;
+  }
+
 
   .cta-button-hero {
     width: 100%; /* Изменяем ширину на 100% для адаптации к экрану */
