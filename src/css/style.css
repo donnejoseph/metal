@@ -384,7 +384,70 @@ h3 {
   right: 12px;
 }
 
+.equipment-section {
+  height: 1050px;
+  background-color: #BF1E2E;
+}
 
+h4 {
+  color: #BF1E2E;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.68px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.equipment-description-box {
+  margin-top: 60px;
+  padding-left: 40px;
+  padding-top: 40px;
+  width: 575px; 
+  height: 460px;
+  background-color: #ffffff;
+}
+
+.equipment-description {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.equipment-image-one {
+  margin-left: 10px;
+  margin-top: 60px;
+  background-image: url(../img/equipment_one.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 536px;
+  height: 460px;
+}
+
+.equipment-image-two {
+  margin-top: 10px;
+  background-image: url(../img/equipment_two.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 575px;
+  height: 460px;
+}
+
+.equipment-image-three {
+  margin-left: 10px;
+  margin-top: 10px;
+  background-image: url(../img/equipment_three.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 536px;
+  height: 460px;
+}
 
 
 @media (min-width: 992px) and (max-width: 1400px) {
