@@ -283,6 +283,46 @@ body {
   height: 24px;
 }
 
+.services-section {
+  background-color: #ECEFF3;
+}
+
+h3 {
+  width: 250px;
+  color: #BF1E2E;
+  font-family: Inter;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.68px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-top: 60px;
+  margin-bottom: 63px;
+}
+
+.services-description {
+  margin-left: -3px;
+  white-space: nowrap;
+  margin-top: 60px;
+}
+
+.col-3 {
+  padding-right: 0;
+  width: 20.666667%;
+}
+
+.col-2 {
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+
+
+
+
+
 @media (min-width: 992px) and (max-width: 1400px) {
   .hero-description-line {
     margin-left: 0; /* Убираем отрицательный отступ */
