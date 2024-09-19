@@ -12,8 +12,9 @@ h1 {
   max-width: 20%;
 }
 header {
+  background-color: #ECEFF3;
   position: relative;
-  margin-bottom: 12px;
+  padding-bottom: 12px;
 }
 
 body {
@@ -448,6 +449,744 @@ h4 {
   width: 536px;
   height: 460px;
 }
+
+.contacts-section {
+  height: 456px;
+  background-color: #BF1E2E;
+}
+
+h5 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  color: #FFF;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.68px;
+  text-transform: uppercase;
+}
+
+.contacts-company-name {
+  margin-bottom: 49px;
+  color:  #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; 
+}
+
+.phone-icon {
+  margin-right: 30px;
+}
+
+.contacts-numbers {
+  white-space: pre-wrap;
+  color:  #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; 
+}
+
+.mail-wrapper {
+  display: flex;
+  align-items: center; 
+  margin-top: 15px; 
+  margin-bottom: 30px;
+}
+
+.mail-img {
+  background-image: url(../img/mail.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 40px; 
+}
+
+.contacts-email {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.location-img {
+  background-image: url(../img/map-pin.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 40px;
+}
+
+.contacts-location {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; 
+}
+
+.location-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.map-zaglushka {
+  margin-top: 84px;
+  background-image: url(../img/map-zaglushla.png);
+  width: 100%;
+  height: 336px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+footer {
+  height: 420px;
+  background-color: #232323;
+}
+
+.footer-logo {
+  background-image: url(../img/logo_white.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  width: 160px;
+  height: 85px;
+  margin-top: 50px;
+  margin-left: -12px;
+  margin-bottom: 30px;
+}
+
+.footer-number {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.footer-email {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.footer-menu a {
+  white-space: nowrap;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.footer-menu:not(:first-child) {
+  margin-top: 20px;
+}
+
+.footer-menu-top a {
+  margin-top: 165px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.footer-menu-top {
+  margin-top: 165px;
+}
+
+.footer-menu-jobs a {
+  white-space: nowrap;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.footer-menu-jobs:not(:first-child) {
+  margin-top: 20px;
+}
+
+.footer-menu-top a {
+  margin-top: 165px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.footer-menu-top {
+  margin-top: 165px;
+}
+
+
+
+footer form {
+  margin-top: 160px;
+}
+
+footer .form-control {
+  color: #FFF;
+  border-bottom: 0px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid #FFF;
+  background-color: transparent;
+  border-radius: 0px;
+}
+
+footer .transparent-input {
+  background-color: transparent !important;
+  color: #fff !important;  
+  border: none !important;
+  border-bottom: 2px solid #fff !important;
+}
+
+footer .call-request-button {
+  margin-top: 34px;
+  align-self: stretch;
+  border-radius: 34px;
+  color: #fff;
+  padding: 10px 40px;
+  font: 500 16px Inter, sans-serif;
+  border: 2px solid rgba(191, 30, 46, 1);
+  cursor: pointer;
+  background: none;
+  transition: background-color #fff 0.3s ease;
+}
+
+footer .transparent-input::placeholder {
+  color: #ccc !important;  
+}
+
+footer .transparent-input:focus {
+  outline: none !important;
+  border-bottom: 2px solid #fff !important;
+  box-shadow: none !important;
+}
+
+.question-title {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  color: #BF1E2E;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.68px;
+  text-transform: uppercase;
+}
+
+.question-title-span {
+  color: #232323;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.68px;
+  text-transform: uppercase;
+}
+
+.question-box {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 43px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #ffffff;
+  background-image: url(../img/string.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+
+}
+
+.form-control {
+  color: #FFF;
+  border: 1px solid #8B8B8B;
+  background-color: transparent;
+  border-radius: 0px;
+}
+
+.question-section {
+  padding-bottom: 120px;
+}
+
+.form-control-last {
+  height: 144.634px;
+  padding-bottom: 115px;
+  line-height: 1;
+}
+
+.string-img {
+  position: absolute;
+  top: 0;
+  left: 692px;
+  z-index: 0;
+  height: 280px;
+  width: 376px;
+}
+
+.button-content-contacts {
+  border-radius: 34px;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 330px;
+  height: 39px;
+  background-color: #bf1e2e;
+}
+
+.button-text-contacts {
+  color: #fff;
+}
+
+.text-contacts {
+  color: #232323;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.68px;
+  padding-bottom: 66px;
+}
+
+.form-check-input[type=checkbox] {
+  border-radius: 0px;
+  border: #8B8B8B solid 1px;
+  width: 20px;
+  height: 21px;
+}
+
+
+.form-check-label {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.carousel-section {
+  height: 402px;
+  background-color: #FFF;
+}
+
+h6 {
+  padding-top: 128px;
+  color: #BF1E2E;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.68px;
+  text-transform: uppercase;
+}
+
+.about-company-section {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 120px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.parent-desktop {
+  display: flex;
+  justify-content: center;
+}
+
+
+.left-col {
+  width: 73%;
+}
+
+.div1-page2 {
+  position: relative;
+  background-color: #474a51;
+  height: 238px;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div1-page2-title {
+  position: absolute;
+  top: 90px;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.68px;
+  text-transform: uppercase;
+}
+
+.div1-page2-description {
+  position: absolute;
+  top: 137px;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  text-transform: uppercase;
+}
+
+.div2-page2 {
+  position: relative;
+  background-color: #ffffff;
+  height: 238px;
+  border: 3px solid #474a51;
+  border-bottom: 0px;
+  width: 70%;
+}
+
+.div2-description-page2 {
+  position: absolute;
+  top: 64px;
+  color: #232323;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; 
+  margin-left: 53px;
+}
+
+.div3-page2{
+  position: relative;
+  background-color: #ffffff;
+  height: 238px;
+  width: 40%;
+  border: 3px solid #474a51;
+}
+
+.div3-page2-description {
+  position: absolute;
+  top: 70px;
+  color: #232323;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; 
+  margin-left: 30px;
+}
+
+.div4-page2 {
+  position: relative;
+  background-color: #474a51;
+  height: 238px;
+  width: 28%;
+}
+
+.div4-page2-title {
+  position: absolute;
+  top: 89px;
+  left: 78px;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.68px;
+  text-transform: uppercase;
+}
+
+.div4-page2-description {
+  position: absolute;
+  top: 137px;
+  left: 29px;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  text-transform: uppercase;
+}
+
+.div5-page2 {
+  position: relative;
+  background-color: #ffffff;
+  height: 238px;
+  width: 32%;
+  border: 3px solid #474a51;
+}
+
+.div5-page2-description {
+  position: absolute;
+  top: 67px;
+  left: 17px;
+  color: #232323;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.div6-page2 {
+  background-color: #474a51;
+  width: 23.5%;
+}
+
+.div6-page2-title-box {
+  padding-top: 51px;
+  padding-left: 19px;
+}
+
+.div6-page2-title {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; 
+ }
+
+ .tokar-button-container{
+  margin: 0 auto;
+  padding-top: 40px;
+  max-width: 220px;
+  border-radius: 29px;
+  color: #fff;
+  font: 500 16px Inter, sans-serif;
+ }
+
+ .tokar-button { 
+  width: 220px;
+  height: 34px;
+  border-radius: 29px;
+  border: 1px solid #fff;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+ }
+
+ .frezer-button-container{
+  margin: 0 auto;
+  padding-top: 23px;
+  max-width: 220px;
+  border-radius: 29px;
+  color: #fff;
+  font: 500 16px Inter, sans-serif;
+ }
+
+ .frezer-button { 
+  width: 220px;
+  height: 34px;
+  border-radius: 29px;
+  border: 1px solid #fff;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+ }
+
+ .laser-button-container{
+  margin: 0 auto;
+  padding-top: 23px;
+  max-width: 220px;
+  border-radius: 29px;
+  color: #fff;
+  font: 500 16px Inter, sans-serif;
+ }
+
+ .laser-button { 
+  width: 220px;
+  height: 34px;
+  border-radius: 29px;
+  border: 1px solid #fff;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+ }
+
+ .plasma-button-container{
+  margin: 0 auto;
+  padding-top: 23px;
+  max-width: 220px;
+  border-radius: 29px;
+  color: #fff;
+  font: 500 16px Inter, sans-serif;
+ }
+
+ .plasma-button { 
+  width: 220px;
+  height: 34px;
+  border-radius: 29px;
+  border: 1px solid #fff;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+ }
+
+ .svar-button-container{
+  margin: 0 auto;
+  padding-top: 23px;
+  max-width: 220px;
+  border-radius: 29px;
+  color: #fff;
+  font: 500 16px Inter, sans-serif;
+ }
+
+ .svar-button { 
+  width: 220px;
+  height: 34px;
+  border-radius: 29px;
+  border: 1px solid #fff;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+ }
+
+
+.about-company-container {
+  display: flex;
+  width: 100%;
+  max-width: 1162px;
+  flex-direction: column;
+}
+
+
+
+.about-company-header-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.about-company-column {
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+
+.about-company-title {
+  margin-right: 12px;
+  color: #bf1e2e;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: -0.68px;
+  text-transform: uppercase;
+}
+
+.about-company-description {
+  color: #232323;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.tokar-button:hover, 
+.frezer-button:hover, 
+.laser-button:hover, 
+.plasma-button:hover, 
+.svar-button:hover {
+  background-color: #BF1E2E; 
+  color: #fff; 
+  border-color: #BF1E2E; 
+  transform: scale(1.1); 
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease; 
+}
+
+.tokar-button, 
+.frezer-button, 
+.laser-button, 
+.plasma-button, 
+.svar-button {
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 992px) and (max-width: 1400px) {
