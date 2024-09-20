@@ -1392,8 +1392,54 @@ color: #fff;
   overflow: hidden;
 }
 
+.modal-content {
+  background-color: #BF1E2E;
+  background-image: url(../img/string.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
 
+.modal-header {
+  padding-bottom: 0;
+  border-bottom: none;
+}
 
+.modal-title {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+}
+
+.modal-instructions {
+  margin-top: 18px;
+  color: #FFF;
+}
+
+.form-control {
+  border: #F2A4AC 1px solid;
+}
+
+.name-input::placeholder {
+  color: #F2A4AC; 
+}
+
+.phone-input::placeholder {
+  color: #F2A4AC;
+}
+
+.message-input::placeholder {
+  color: #F2A4AC;
+
+}
+
+.message-input {
+  height: ;
+  margin-top: 10px;
+}
 
 
 

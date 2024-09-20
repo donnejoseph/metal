@@ -118,10 +118,13 @@
             >
               <div class="modal-dialog">
                 <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="callBackModalLabel">
-                      Заголовок модального окна
-                    </h1>
+                  <div class="modal-header align-items-start">
+                    <div class="col">
+                      <h1 class="modal-title fs-5" id="callBackModalLabel">
+                        Заказать звонок
+                      </h1>
+                      <p class="modal-instructions">Заполните форму ниже и наш специалист свяжется с вами в ближайшее время и проконсультирует</p>
+                    </div>
                     <button
                       type="button"
                       class="btn-close"
@@ -129,7 +132,21 @@
                       aria-label="Закрыть"
                     ></button>
                   </div>
-                  <div class="modal-body">...</div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" class="form-control name-input" placeholder="Ваше Имя*" aria-label="Имя">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control phone-input" placeholder="Номер Телефона*" aria-label="Номер Телефона">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" class="form-control message-input" placeholder="Напишите ваше сообщение или оставьте поле пустым" aria-label="Сообщение">
+                      </div>
+                    </div>
+                  </div>
                   <div class="modal-footer">
                     <button
                       type="button"
@@ -156,7 +173,7 @@
             <div
               class="custom-menu custom-menu-bottom-works custom-menu-bottom-tokar"
             >
-              <a href="#">Токарные работы</a>
+              <a href="/src/tokar.html">Токарные работы</a>
             </div>
           </div>
           <div class="col d-flex justify-content-center">
