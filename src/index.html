@@ -19,8 +19,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
 
     <link href="css/style.css" rel="stylesheet" />
   </head>
@@ -82,7 +88,7 @@
           </div>
           <div class="col-2 d-flex align-items-center justify-content-center">
             <div class="custom-menu">
-              <a href="#">Контакты</a>
+              <a href="/src/contacts.html">Контакты</a>
             </div>
           </div>
           <div class="col-2 d-flex align-items-center justify-content-center">
@@ -91,9 +97,54 @@
             </div>
           </div>
           <div class="col-3 d-flex align-items-center justify-content-end">
-            <button class="btn btn-primary cta-button cta-button-desktop">
+             <!-- Кнопка-триггер модального окна -->
+            <button
+              class="btn btn-primary cta-button cta-button-desktop"
+              type="button"
+            
+              data-bs-toggle="modal"
+              data-bs-target="#callBackModal"
+            >
               Заказать звонок
             </button>
+
+            <!-- Модальное окно -->
+            <div
+              class="modal fade"
+              id="callBackModal"
+              tabindex="-1"
+              aria-labelledby="callBackModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="callBackModalLabel">
+                      Заголовок модального окна
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Закрыть"
+                    ></button>
+                  </div>
+                  <div class="modal-body">...</div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Закрыть
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Сохранить изменения
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -332,9 +383,7 @@
     <!-- Carousel section start -->
     <section class="carousel-section">
       <div class="container carousel-container">
-        <h6>
-          НАШИ КЛИЕНТЫ
-        </h6>
+        <h6>НАШИ КЛИЕНТЫ</h6>
         <div class="row">
           <div class="col">
             <div class="owl-carousel owl-theme">
@@ -350,19 +399,22 @@
               <div class="item"><h4>10</h4></div>
               <div class="item"><h4>11</h4></div>
               <div class="item"><h4>12</h4></div>
+            </div>
           </div>
         </div>
-        </div>
-        </div>
+      </div>
     </section>
-      <!-- Carousel section end -->
+    <!-- Carousel section end -->
 
     <!-- Question section start -->
     <section class="question-section">
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2 class="question-title">есть вопросы? <br> <span class="question-title-span">напишите нам</span> </h2>
+            <h2 class="question-title">
+              есть вопросы? <br />
+              <span class="question-title-span">напишите нам</span>
+            </h2>
           </div>
         </div>
       </div>
@@ -391,7 +443,7 @@
                   placeholder="E-mail"
                 />
               </div>
-              
+
               <div class="col-4 mb-3">
                 <input
                   type="text-input"
@@ -400,29 +452,36 @@
                   placeholder="Ваш вопрос:"
                 />
                 <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Я согласен с Политикой конфиденциальности</label>
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                  />
+                  <label class="form-check-label" for="exampleCheck1"
+                    >Я согласен с Политикой конфиденциальности</label
+                  >
                 </div>
-              
               </div>
               <div class="col-4 mb-3">
-                <p class="text-contacts">Мы ответим на все интересующие вас вопросы в рабочее время:
-                  понедельник - пятница с 8:00 до 17:00</p>
-                  <div class="button-content-contacts">
-                    <span class="button-text-contacts">ЗАДАТЬ ВОПРОС</span>
-                    <img
-                      src="img/arrow-down-right.png"
-                      alt=""
-                      class="button-icon"
-                    />
-                  </div>
+                <p class="text-contacts">
+                  Мы ответим на все интересующие вас вопросы в рабочее время:
+                  понедельник - пятница с 8:00 до 17:00
+                </p>
+                <div class="button-content-contacts">
+                  <span class="button-text-contacts">ЗАДАТЬ ВОПРОС</span>
+                  <img
+                    src="img/arrow-down-right.png"
+                    alt=""
+                    class="button-icon"
+                  />
+                </div>
               </div>
             </form>
           </div>
         </div>
       </div>
     </section>
-     <!-- Question section end -->
+    <!-- Question section end -->
 
     <!-- Contacts section start -->
     <section class="contacts-section">
@@ -431,10 +490,12 @@
           <div class="col-5">
             <h5>КОНТАКТЫ</h5>
             <div class="contacts-company-name">ООО “ГАЛСЕРВИС”</div>
-            <img src="img/phone.png" class="phone-icon" alt="" />
-            <span class="contacts-numbers">
-              +7 909 069 08 88 +7 3513 69 40 19
-            </span>
+            <div class="phone-wrapper">
+              <img src="img/phone.png" class="phone-icon" alt="" />
+              <span class="contacts-numbers">
+                +7 909 069 08 88 +7 3513 69 40 19
+              </span>
+            </div>
             <div class="mail-wrapper">
               <div class="mail-img"></div>
               <span class="contacts-email">gal-service@yandex.ru</span>
@@ -455,8 +516,6 @@
     </section>
     <!-- Contacts section end -->
 
-
-
     <!-- Подключение Bootstrap JS -->
 
     <script
@@ -464,12 +523,10 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    
-
   </body>
   <footer>
     <div class="container">

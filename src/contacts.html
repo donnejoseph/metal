@@ -1,245 +1,335 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Галсервис</title>
+    <!-- Подключение Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
-    <!-- Подключение jQuery (Owl Carousel требует jQuery) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <!-- Подключение JS Owl Carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <link href="css/style.css" rel="stylesheet" />
   </head>
 
-  <header class="header">
-    <div class="header-content">
-      <img
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/02cf96c5a44993d34e8a2cb812d3520e6f21efa163eee51bad4441729bbce9a4?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
-        alt="Company Logo"
-        class="logo"
-      />
-      <nav class="nav-links">
-        <a href="/src/about_company.html" class="nav-link-about">О компании</a>
-        <a href="#contacts" class="nav-link contact-link">Контакты</a>
-        <a href="tel:+79090690888" class="phone-number">+7 909 069 08 88</a>
-        <button class="cta-button">ЗАКАЗАТЬ ЗВОНОК</button>
-      </nav>
-    </div>
-    <div class="red-line"></div>
-    <nav class="service-links">
-      <a href="/src/tokar.html" class="service-link">Токарные работы</a>
-      <a href="#milling" class="service-link">Фрезерные работы</a>
-      <a href="#laser-cutting" class="service-link">Лазерная резка</a>
-      <a href="#plasma-cutting" class="service-link">Плазменная резка</a>
-      <a href="#welding" class="service-link">Сварочные работы</a>
-    </nav>
-  </header>
-
-  <section class="location-section-page3">
-    <div class="location-content">
-      <div class="location-row">
-        <div class="location-column">
-          <div class="location-info">
-            <h2 class="location-title-page3">контакты</h2>
-            <p class="location-company-page3">ООО "ГАЛСЕРВИС"</p>
-            <div class="location-contact">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/b1dca8b043ffbe8991c7981a9fb955d83550c668bdff3bf92794ebc216853b62?placeholderIfAbsent=true&apiKey=6f5ed989a9014907ba5f434cdcea5a48"
-                alt="Phone icon"
-                class="location-icon"
-              />
-              <div class="location-contact-details">
-                <p class="location-phone">+7 909 069 08 88</p>
-                <p class="location-phone">+7 3513 69 40 19</p>
-              </div>
-            </div>
-            <div class="location-email">
-              <img
-                src="/src/img/mail.png"
-                alt="Email icon"
-                class="location-icon"
-              />
-              <p class="location-email">gal-service@yandex.ru</p>
-            </div>
-            <div class="location-address">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/23b21ddef3de3b92b00cb652ce82c794de0b742bf1f28a22f2bc04fc78ce691a?placeholderIfAbsent=true&apiKey=6f5ed989a9014907ba5f434cdcea5a48"
-                alt="Location icon"
-                class="location-icon"
-              />
-              <p class="location-address-text-page3">
-                456208, Челябинская область, г. Златоуст, ул. Тульская 1 - 9
-              </p>
-            </div>
+<body>
+  <header>
+    <div class="container mb-3 navbar-relative">
+      <!--Mobile menu start-->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary mobile-menu">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria="page" href="#">О компании</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria="true">Disabled</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria="true">Disabled</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria="true">Disabled</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="location-map-column">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/ddb4172491177607785950479c8f54af82e1c8e914315c7abf1d7dbaf25c6485?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
-            alt="Location map"
-            class="location-map"
-          />
+      </nav>
+      <!-- Mobile menu end -->
+
+      <!-- Dekstop menu start -->
+      <div class="row align-items-center top-menu-row">
+        <div class="col-3">
+          <img src="img/logo.png" alt="Логотип компании" class="logo" />
+        </div>
+        <div class="col-2 d-flex align-items-center justify-content-center">
+          <div class="custom-menu">
+            <a href="/src/about_company.html">О компании</a>
+          </div>
+        </div>
+        <div class="col-2 d-flex align-items-center justify-content-center">
+          <div class="custom-menu">
+            <a href="#">Контакты</a>
+          </div>
+        </div>
+        <div class="col-2 d-flex align-items-center justify-content-center">
+          <div class="custom-menu-number">
+            <a href="#">+7 909 069 08 88</a>
+          </div>
+        </div>
+        <div class="col-3 d-flex align-items-center justify-content-end">
+          <button class="btn btn-primary cta-button cta-button-desktop">
+            Заказать звонок
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid red-line"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <div
+            class="custom-menu custom-menu-bottom-works custom-menu-bottom-tokar"
+          >
+            <a href="#">Токарные работы</a>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="custom-menu custom-menu-bottom-works">
+            <a href="#">Фрезерные работы</a>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="custom-menu custom-menu-bottom-works">
+            <a href="#">Лазерная резка</a>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="custom-menu custom-menu-bottom-works">
+            <a href="#">Плазменная резка</a>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="custom-menu custom-menu-bottom-works">
+            <a href="#">Сварочные работы</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Dekstop menu end -->
+
+  <section class="contacts-section-page3">
+    <div class="container">
+      <div class="row">
+        <div class="col-5 col5-container">
+          <h5 class="contacts-title-page3">КОНТАКТЫ</h5>
+          <div class="contacts-company-name-page3">ООО “ГАЛСЕРВИС”</div>
+          <div class="phone-wrapper">
+          <img src="img/phone-red.png" class="phone-icon" alt="" />
+          <span class="contacts-numbers-page3">
+            +7 909 069 08 88 
+            +7 3513 69 40 19
+          </span>
+        </div>
+          <div class="mail-wrapper">
+            <div class="mail-img-page3"></div>
+            <span class="contacts-email-page3">gal-service@yandex.ru</span>
+          </div>
+          <div class="location-wrapper">
+            <div class="location-img-page3"></div>
+            <span class="contacts-location-page3"
+              >456208, Челябинская область, г. Златоуст, ул. Тульская 1 -
+              9</span
+            >
+          </div>
+        </div>
+        <div class="col-7">
+          <div class="map-zaglushka"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="contact-section" id="contacts">
-    <div class="contact-content">
-      <h2 class="contact-title">
-        <span class="questions-?" style="color: #bf1e2e">Есть вопросы?</span>
-        <br />
-        <span class="contact-us"  style="color: #232323">напишите нам</span>
-      </h2>
-      <form class="contact-form">
-        <div class="form-container">
-          <div class="form-layout">
-            <div class="input-column">
-              <form class="input-group">
-                <label for="name" class="visually-hidden">Ваше имя</label>
-                <input type="text" id="name" class="form-input-top" placeholder="Ваше имя" aria-label="Ваше имя">
-                <label for="phone" class="visually-hidden">Телефон</label>
-                <input type="tel" id="phone" class="form-input" placeholder="Телефон" aria-label="Телефон">
-                <label for="email" class="visually-hidden">E-mail</label>
-                <input type="email" id="email" class="form-input-bottom" placeholder="E-mail" aria-label="E-mail">
+      <!-- Question section start -->
+      <section class="question-section">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 class="question-title">
+                есть вопросы? <br />
+                <span class="question-title-span">напишите нам</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="container question-box">
+          <div class="row">
+            <div class="col">
+              <form class="row">
+                <div class="col-4 mb-3">
+                  <input
+                    type="text"
+                    id="name"
+                    class="form-control mb-3"
+                    placeholder="Ваше имя"
+                  />
+  
+                  <input
+                    type="text"
+                    id="phone"
+                    class="form-control mb-3"
+                    placeholder="Телефон"
+                  />
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control mb-0"
+                    placeholder="E-mail"
+                  />
+                </div>
+  
+                <div class="col-4 mb-3">
+                  <input
+                    type="text-input"
+                    id="text-input"
+                    class="form-control form-control-last mb-3"
+                    placeholder="Ваш вопрос:"
+                  />
+                  <div class="mb-3 form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >Я согласен с Политикой конфиденциальности</label
+                    >
+                  </div>
+                </div>
+                <div class="col-4 mb-3">
+                  <p class="text-contacts">
+                    Мы ответим на все интересующие вас вопросы в рабочее время:
+                    понедельник - пятница с 8:00 до 17:00
+                  </p>
+                  <div class="button-content-contacts">
+                    <span class="button-text-contacts">ЗАДАТЬ ВОПРОС</span>
+                    <img
+                      src="img/arrow-down-right.png"
+                      alt=""
+                      class="button-icon"
+                    />
+                  </div>
+                </div>
               </form>
             </div>
-            <div class="message-column">
-              <div class="message-container">
-                <div class="message-layout">
-                  <div class="textarea-column">
-                    <div class="textarea-group">
-                      <label for="question" class="visually-hidden">Ваш вопрос</label>
-                      <textarea id="question" class="form-textarea" placeholder="Ваш вопрос:" aria-label="Ваш вопрос"></textarea>
-                      <div class="checkbox-group">
-                        <input type="checkbox" id="privacy-policy" class="checkbox" aria-label="Согласие с политикой конфиденциальности">
-                        <label for="privacy-policy" class="checkbox-label">Я согласен с Политикой конфиденциальности</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="info-column">
-                    <div class="info-container">
-                      <div class="answer-hours">
-                        <p style="white-space: normal;" class="answer-hours-text">
-                          Мы ответим на все интересующие вас вопросы в рабочее время: <span style="white-space: nowrap;">понедельник - пятница с 8:00 до 17:00</span>
-                        </p>
-                        <a href="#" class="question-button" role="button">
-                          <div class="question-button-content">
-                            <span class="question-button-text">задать вопрос</span>
-                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8966d737239198f254143002353bd968f90f093ddf015daf23329789719df9ff?placeholderIfAbsent=true&apiKey=6f5ed989a9014907ba5f434cdcea5a48" alt="" class="question-button-icon" />
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
-      </form>
-    </div>
-  </section>
+      </section>
+      <!-- Question section end -->
 
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-wrapper">
-        <div class="footer-row">
-          <div class="footer-column-narrow">
-            <div class="footer-logo-wrapper">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/16ca6a3619fac1916e8ba9735f86c353cbb0431b462820c7c035441963b0ab29?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
-                alt="Company Logo"
-                class="logo"
-              />
-              <div class="footer-contact">
-                <p class="footer-phone">+7 909 069 08 88</p>
-                <p class="footer-email">gal-service@yandex.ru</p>
-              </div>
-            </div>
-          </div>
-          <div class="footer-column-wide">
-            <div class="footer-links-wrapper">
-              <div class="footer-links-row">
-                <div class="footer-links-column">
-                  <nav class="footer-links">
-                    <a href="#about" class="footer-link-top">О компании</a>
-                    <a href="#services" class="footer-link">Услуги</a>
-                    <a href="#contacts" class="footer-link">Контакты</a>
-                    <a href="#privacy" class="footer-link"
-                      >Политика конфиденциальности</a
-                    >
-                    <a href="#callback" class="footer-link"
-                      >Заказать звонок</a
-                    >
-                  </nav>
-                </div>
-                <div class="footer-links-column">
-                  <nav class="footer-links">
-                    <a href="#turning" class="footer-link-top"
-                      >Токарные работы</a
-                    >
-                    <a href="#milling" class="footer-link"
-                      >Фрезерные работы</a
-                    >
-                    <a href="#welding" class="footer-link"
-                      >Сварочные работы</a
-                    >
-                    <a href="#laser-cutting" class="footer-link"
-                      >Лазерная резка металла</a
-                    >
-                    <a href="#plasma-cutting" class="footer-link"
-                      >Плазменная резка металла</a
-                    >
-                  </nav>
-                </div>
-                <div class="footer-form-column">
-                  <form class="footer-form">
-                    <label for="footer-name" class="visually-hidden"
-                      >Имя</label
-                    >
-                    <input
-                      type="text"
-                      id="footer-name"
-                      class="footer-form-input"
-                      placeholder="Имя"
-                    />
-                    <div class="footer-form-line"></div>
-                    <label for="footer-phone" class="visually-hidden"
-                      >Телефон</label
-                    >
-                    <input
-                      type="tel"
-                      id="footer-phone"
-                      class="footer-form-input"
-                      placeholder="Телефон"
-                    />
-                    <div class="footer-form-line"></div>
-                    <button type="submit" class="footer-form-button">
-                      ЗАКАЗАТЬ ЗВОНОК
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+
+
+
+<footer>
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+      <div class="footer-logo"></div>
+      <p class="footer-number">+7 909 069 08 88</p>
+      <p class="footer-email">gal-service@yandex.ru</p>
+    </div>
+    <div class="col-3">
+      <div class="footer-menu-top">
+        <a href="#">О компании</a>
+      </div>
+      <div class="footer-menu">
+        <a href="#">Услуги</a>
+      </div>
+      <div class="footer-menu">
+        <a href="#">Контакты</a>
+      </div>
+      <div class="footer-menu">
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+      <div class="footer-menu">
+        <a href="#">Заказать звонок</a>
       </div>
     </div>
-  </footer>
+    <div class="col-3">
+      <div class="footer-menu-top">
+        <a href="#">Токарные работы</a>
+      </div>
+      <div class="footer-menu-jobs">
+        <a href="#">Фрезерные работы</a>
+      </div>
+      <div class="footer-menu-jobs">
+        <a href="#">Сварочные работы</a>
+      </div>
+      <div class="footer-menu-jobs">
+        <a href="#">Лазерная резка металла</a>
+      </div>
+      <div class="footer-menu-jobs">
+        <a href="#">Плазменная резка металла</a>
+      </div>
+    </div>
+    <div class="col-3">
+      <form>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control transparent-input"
+            id="exampleInputName"
+            placeholder="Имя"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control transparent-input"
+            id="phone"
+            placeholder="Телефон"
+          />
+        </div>
+        <button class="call-request-button" type="button">
+          <span class="visually-hidden">Request a call</span>
+          ЗАКАЗАТЬ ЗВОНОК
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+</footer>
+</html>

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>О компании</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Галсервис</title>
+    <!-- Подключение Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,124 +12,501 @@
       crossorigin="anonymous"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    />
-
-    <!-- Подключение jQuery (Owl Carousel требует jQuery) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <!-- Подключение JS Owl Carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <link href="css/style.css" rel="stylesheet" />
   </head>
-  <body>
-    <section class="main-container">
-      <header class="header">
-        <div class="header-content">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/02cf96c5a44993d34e8a2cb812d3520e6f21efa163eee51bad4441729bbce9a4?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
-            alt="Company Logo"
-            class="logo"
-          />
-          <nav class="nav-links">
-            <a href="/src/about_company.html" class="nav-link-about"
-              >О компании</a
-            >
-            <a href="/src/contacts.html" class="nav-link contact-link"
-              >Контакты</a
-            >
-            <a href="tel:+79090690888" class="phone-number">+7 909 069 08 88</a>
-            <button class="cta-button">ЗАКАЗАТЬ ЗВОНОК</button>
-          </nav>
-        </div>
-        <div class="red-line"></div>
-        <nav class="service-links">
-          <a href="/src/tokar.html" class="service-link">Токарные работы</a>
-          <a href="#milling" class="service-link">Фрезерные работы</a>
-          <a href="#laser-cutting" class="service-link">Лазерная резка</a>
-          <a href="#plasma-cutting" class="service-link">Плазменная резка</a>
-          <a href="#welding" class="service-link">Сварочные работы</a>
-        </nav>
-      </header>
-      <section class="hero-section-page4">
-        <img
-          src="/src/img/Фон токарные работы.png  "
-          alt="Metal processing background"
-          class="tokar-background"
-        />
-        <div class="hero-content">
-          <h1 class="hero-title">
-            Токарные <br />
-            Работы
-          </h1>
-          <div class="hero-subtitle">
-            <span class="hero-subtitle-text"
-              >Выполняем заказы любой сложности.</span
-            >
-            <div class="hero-subtitle-line"></div>
+
+<body>
+  <header>
+    <div class="container mb-3 navbar-relative">
+      <!--Mobile menu start-->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary mobile-menu">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria="page" href="#">О компании</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria="true">Disabled</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria="true">Disabled</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria="true">Disabled</a>
+              </li>
+            </ul>
           </div>
-          <div class="hero-cta">
-            <div class="cta-primary-wrapper button-order">
-              <button class="cta-primary">
-                <span class="cta-primary-text">ОСТАВИТЬ ЗАЯВКУ</span>
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/dbb72066ef609985da8a6d096170c22f01131c950555412a48814659a8bdcf34?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
-                  alt="Arrow icon"
-                  class="cta-primary-icon"
-                />
-              </button>
+        </div>
+      </nav>
+      <!-- Mobile menu end -->
+
+      <!-- Dekstop menu start -->
+      <div class="row align-items-center top-menu-row">
+        <div class="col-3">
+          <img src="img/logo.png" alt="Логотип компании" class="logo" />
+        </div>
+        <div class="col-2 d-flex align-items-center justify-content-center">
+          <div class="custom-menu">
+            <a href="/src/about_company.html">О компании</a>
+          </div>
+        </div>
+        <div class="col-2 d-flex align-items-center justify-content-center">
+          <div class="custom-menu">
+            <a href="/src/contacts.html">Контакты</a>
+          </div>
+        </div>
+        <div class="col-2 d-flex align-items-center justify-content-center">
+          <div class="custom-menu-number">
+            <a href="#">+7 909 069 08 88</a>
+          </div>
+        </div>
+        <div class="col-3 d-flex align-items-center justify-content-end">
+          <button class="btn btn-primary cta-button cta-button-desktop">
+            Заказать звонок
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid red-line"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <div
+            class="custom-menu custom-menu-bottom-works custom-menu-bottom-tokar"
+          >
+            <a href="#">Токарные работы</a>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="custom-menu custom-menu-bottom-works">
+            <a href="#">Фрезерные работы</a>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="custom-menu custom-menu-bottom-works">
+            <a href="#">Лазерная резка</a>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="custom-menu custom-menu-bottom-works">
+            <a href="#">Плазменная резка</a>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="custom-menu custom-menu-bottom-works">
+            <a href="#">Сварочные работы</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Dekstop menu end -->
+
+      <!-- Hero menu start -->
+      <section class="hero">
+        <div class="container-fluid hero-tokar-image">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h1 class="hero-title">Токарные<br />работы</h1>
+                <div class="row">
+                  <div class="col-5">
+                    <p class="hero-description">выполняем заказы любой сложности</p>
+                  </div>
+                  <div class="col-7">
+                    
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <button class="btn btn-primary cta-button cta-button-hero">
+                      <span class="cta-button-text">Оставить заявку</span
+                      ><i class="fas fa-arrow-right button-arrow"></i>
+                    </button>
+                  </div>
+                  <div class="col d-flex justify-content-end">
+                    <div class="mail-icon">
+                      <img src="img/mail.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <button class="cta-secondary">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/a1c6cab3bde3284d7e64f03a21641c193902699bf9a562b3de066f9274e0d213?placeholderIfAbsent=true&apiKey=52d8fe5e75da4f2d990fd7eaeb56d571"
-                alt="Email icon"
-                class="cta-secondary-icon"
-              />
-            </button>
           </div>
         </div>
       </section>
-      <section class="work-types">
+      <!-- Hero menu end -->
+
+      <!-- Work types menu start -->
+      <section class="work-types-section">
         <div class="container">
           <div class="row">
             <div class="col-5">
-              <h4 class="work-types-title">ВИДЫ РАБОТ</h4>
-              <p class="work-types-description">
-                Вы можете заказать любые токарные, токарно-фрезерные работы
-              </p>
+            <h2 class="work-types-title">
+              ВИДЫ РАБОТ
+            </h2>
+            <p class="title-description">
+              Вы можете заказать любые токарные, токарно-фрезерные работы
+            </p>
             </div>
+
+
             <div class="col-7">
-              <div class="row">
-                <div class="col-2">
+             <div class="dot1-wrapper">
+              <div class="dot1-img"></div>
+              <span>
+                Высокоточная токарная, токарно-фрезерная обработка любых <br> материалов - от закаленных сталей до полимеров
+              </span>
+             </div>
+             
+             
+             <div class="dot2-wrapper">
+              <div class="dot2-img"></div>
+              <span>
+                D 200мм, L 750мм
+              </span>
+             </div>
 
-                </div>
-                <div class="col-10">
-
-                </div>
-
-                </div>
-
-              </div>
-              <div class="row">
-
-              </div>
-
-              </div>
+             <div class="dot3-wrapper">
+              <div class="dot3-img"></div>
+              <span>
+                От единичных (сложных исполнений) деталей до серии, <br> мелкой серии
+              </span>
+             </div>
             </div>
+
+
+
+
+
           </div>
         </div>
       </section>
-      
+      <!-- Work types menu start -->
+
+          <!-- Our advantages section -->
+    <section class="advantages-section">
+      <div class="container">
+      <div class="row">
+        <div class="col-5">
+          <h2 class="advantages-title">
+            НАШИ ПРЕИМУЩЕСТВА
+          </h2>
+          <div class="advantage-buttons">
+            <button class="advantage-button"><p class="advantage-button-text">оборудование</p></button>
+            <button class="advantage-button"><p class="advantage-button-text" >индивидуальный подход</p></button>
+            <button class="advantage-button"><p class="advantage-button-text">специалисты</p></button>
+            <button class="advantage-button"><p class="advantage-button-text">выгодные цены</p></button>
+          </div>
+        </div>
+        <div class="col-7">
+          <p class="advantages-description">
+            Благодаря использованию станков с ЧПУ выполнение токарных работ полностью <br>автоматизированно. ЧПУ обеспечивает исключительную точность, защищает от  <br> ошибок и дефектов, характерных для ручной обработки.
+          </p>
+          <div class="button-content-advantages">
+            <span class="button-text-advantages">ОСТАВИТЬ ЗАЯВКУ</span>
+            <img
+              src="/src/img/arrow-down-right-gray.png"
+              alt=""
+              class="button-icon"
+            />
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- Our advantages section end -->
+
+    <section class="equipment-section">
+      <div class="container equipment">
+        <div class="row">
+          <div class="col-6">
+            <div class="equipment-description-box">
+              <h4>станочный парк</h4>
+              <p class="equipment-description">
+                Все работы выполняются на новейшем современном оборудовании
+                “Наименование” <br />
+                <br />
+                Описание количества и характеристик станков. <br />
+                <br />
+                Duis at pellentesque arcu ac adipiscing interdum. Cras egestas
+                <br />
+                sem cursus quis scelerisque odio venenatis nec enim. Nisl <br />
+                euismod eget quisque platea magnis in. Habitant erat mauris
+                varius non metus vulputate. <br />
+                <br />
+                Lorem ipsum dolor sit amet consectetur. Duis at pellentesque
+                <br />
+                arcu ac adipiscing interdum. Cras egestas sem cursus quis <br />
+                scelerisque odio venenatis nec enim. Nisl euismod eget quisque
+                platea magnis in. Habitant erat mauris varius non metus <br />
+                vulputate.
+              </p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="equipment-image-one"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="equipment-image-two"></div>
+          </div>
+          <div class="col-6">
+            <div class="equipment-image-three"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- Carousel section start -->
+        <section class="carousel-section">
+          <div class="container carousel-container">
+            <h6>ПОРТФОЛИО</h6>
+            <div class="row">
+              <div class="col">
+                <div class="owl-carousel owl-theme">
+                  <div class="item"><h4>1</h4></div>
+                  <div class="item"><h4>2</h4></div>
+                  <div class="item"><h4>3</h4></div>
+                  <div class="item"><h4>4</h4></div>
+                  <div class="item"><h4>5</h4></div>
+                  <div class="item"><h4>6</h4></div>
+                  <div class="item"><h4>7</h4></div>
+                  <div class="item"><h4>8</h4></div>
+                  <div class="item"><h4>9</h4></div>
+                  <div class="item"><h4>10</h4></div>
+                  <div class="item"><h4>11</h4></div>
+                  <div class="item"><h4>12</h4></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Carousel section end -->
+
+         <!-- Question section start -->
+    <section class="question-section">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="question-title">
+              есть вопросы? <br />
+              <span class="question-title-span">напишите нам</span>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="container question-box">
+        <div class="row">
+          <div class="col">
+            <form class="row">
+              <div class="col-4 mb-3">
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control mb-3"
+                  placeholder="Ваше имя"
+                />
+
+                <input
+                  type="text"
+                  id="phone"
+                  class="form-control mb-3"
+                  placeholder="Телефон"
+                />
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control mb-0"
+                  placeholder="E-mail"
+                />
+              </div>
+
+              <div class="col-4 mb-3">
+                <input
+                  type="text-input"
+                  id="text-input"
+                  class="form-control form-control-last mb-3"
+                  placeholder="Ваш вопрос:"
+                />
+                <div class="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                  />
+                  <label class="form-check-label" for="exampleCheck1"
+                    >Я согласен с Политикой конфиденциальности</label
+                  >
+                </div>
+              </div>
+              <div class="col-4 mb-3">
+                <p class="text-contacts">
+                  Мы ответим на все интересующие вас вопросы в рабочее время:
+                  понедельник - пятница с 8:00 до 17:00
+                </p>
+                <div class="button-content-contacts">
+                  <span class="button-text-contacts">ЗАДАТЬ ВОПРОС</span>
+                  <img
+                    src="img/arrow-down-right.png"
+                    alt=""
+                    class="button-icon"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Question section end -->
+
+    <!-- Contacts section start -->
+    <section class="contacts-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-5">
+            <h5>КОНТАКТЫ</h5>
+            <div class="contacts-company-name">ООО “ГАЛСЕРВИС”</div>
+            <div class="phone-wrapper">
+            <img src="img/phone.png" class="phone-icon" alt="" />
+            <span class="contacts-numbers">
+              +7 909 069 08 88 +7 3513 69 40 19
+            </span>
+          </div>
+            <div class="mail-wrapper">
+              <div class="mail-img"></div>
+              <span class="contacts-email">gal-service@yandex.ru</span>
+            </div>
+            <div class="location-wrapper">
+              <div class="location-img"></div>
+              <span class="contacts-location"
+                >456208, Челябинская область, г. Златоуст, ул. Тульская 1 -
+                9</span
+              >
+            </div>
+          </div>
+          <div class="col-7">
+            <div class="map-zaglushka"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contacts section end -->
+
+    <!-- Подключение Bootstrap JS -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <div class="footer-logo"></div>
+          <p class="footer-number">+7 909 069 08 88</p>
+          <p class="footer-email">gal-service@yandex.ru</p>
+        </div>
+        <div class="col-3">
+          <div class="footer-menu-top">
+            <a href="#">О компании</a>
+          </div>
+          <div class="footer-menu">
+            <a href="#">Услуги</a>
+          </div>
+          <div class="footer-menu">
+            <a href="#">Контакты</a>
+          </div>
+          <div class="footer-menu">
+            <a href="#">Политика конфиденциальности</a>
+          </div>
+          <div class="footer-menu">
+            <a href="#">Заказать звонок</a>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="footer-menu-top">
+            <a href="#">Токарные работы</a>
+          </div>
+          <div class="footer-menu-jobs">
+            <a href="#">Фрезерные работы</a>
+          </div>
+          <div class="footer-menu-jobs">
+            <a href="#">Сварочные работы</a>
+          </div>
+          <div class="footer-menu-jobs">
+            <a href="#">Лазерная резка металла</a>
+          </div>
+          <div class="footer-menu-jobs">
+            <a href="#">Плазменная резка металла</a>
+          </div>
+        </div>
+        <div class="col-3">
+          <form>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control transparent-input"
+                id="exampleInputName"
+                placeholder="Имя"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control transparent-input"
+                id="phone"
+                placeholder="Телефон"
+              />
+            </div>
+            <button class="call-request-button" type="button">
+              <span class="visually-hidden">Request a call</span>
+              ЗАКАЗАТЬ ЗВОНОК
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
 </html>
