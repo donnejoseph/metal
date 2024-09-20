@@ -1419,7 +1419,19 @@ color: #fff;
   color: #FFF;
 }
 
-.form-control {
+.name-input {
+  border: #F2A4AC 1px solid;
+}
+
+.phone-input {
+  border: #F2A4AC 1px solid;
+}
+
+.message-input {
+  border: #F2A4AC 1px solid;
+}
+
+.file-input {
   border: #F2A4AC 1px solid;
 }
 
@@ -1436,15 +1448,60 @@ color: #fff;
 
 }
 
-.message-input {
-  height: ;
-  margin-top: 10px;
+.file-input::placeholder {
+  color: #F2A4AC;
+
 }
 
 
 
+.message-input {
+  height: 120px;
+  margin-top: 10px;
+}
 
+.form-check .form-check-input {
+  float: left;
+  margin-left: -0.7em;
+  margin-right: 20px;
+}
 
+.window {
+  margin-top: 10px;
+  color: #F2A4AC;
+}
+
+.custom-checkbox {
+  margin-top: 10px;
+  background-color: none;
+}
+
+.file-input {
+  width: 198px;
+}
+
+.upload-button  {
+  font-weight: 500;
+  color: #BF1E2E  ;
+  border-radius: 0px;
+  background-color: white;
+  width: 198px;
+  margin-left: 30px;
+  border: none;
+}
+
+.send-order {
+  font-weight: 500;
+  color: #BF1E2E  ;
+  border-radius: 0px;
+  background-color: white;
+  border: none;
+  width: 100%;
+}
+
+.btn-close {
+  color: white;
+}
 
 
 

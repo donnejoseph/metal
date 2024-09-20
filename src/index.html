@@ -145,18 +145,34 @@
                       <div class="col">
                         <input type="text" class="form-control message-input" placeholder="Напишите ваше сообщение или оставьте поле пустым" aria-label="Сообщение">
                       </div>
+                      <div div class="mb-3 form-check">
+                        <input
+                          type="checkbox"
+                          class="form-check-input custom-checkbox"
+                          id="exampleCheck1"
+                        />
+                        <label class="form-check-label window" for="exampleCheck1"
+                          >Даю согласие на обработку персональных данных</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" class="form-control file-input" placeholder="Выберите Файл*" aria-label="Имя">
+                      </div>
+                      <div class="col">
+                        <button
+                        type="button"
+                        class="btn btn-secondary upload-button"
+                        data-bs-dismiss="modal"
+                      >
+                        Загрузить
+                      </button>
+                      </div>
                     </div>
                   </div>
                   <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Закрыть
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                      Сохранить изменения
+                    <button type="button" class="btn btn-primary send-order">
+                      ОСТАВИТЬ ЗАЯВКУ
                     </button>
                   </div>
                 </div>
