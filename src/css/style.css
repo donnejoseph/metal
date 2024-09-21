@@ -185,6 +185,18 @@ body {
   padding: 4px 20px;
 }
 
+.mail-icon {
+  border: #bf1e2e solid 3px;
+  border-radius: 34px;
+  height: 39px;
+  padding: 4px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.mail-icon:hover {
+  background-color: #bf1e2e; 
+}
+
 .parent {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -261,6 +273,11 @@ body {
   height: 39px;
   box-sizing: border-box;
   margin-left: auto;
+  transition: background-color 0.5s ease, color 0.5s ease; 
+}
+
+.company-info-button:hover {
+  background-color: #bf1e2e; 
 }
 
 .info-img2 {
@@ -450,8 +467,9 @@ h4 {
 }
 
 .contacts-section {
-  height: 456px;
+  height: 496px;
   background-color: #BF1E2E;
+  
 }
 
 h5 {
@@ -558,6 +576,8 @@ h5 {
   background-size: cover;
   padding-bottom: 123px;
 }
+
+
 
 footer {
   height: 420px;
@@ -807,6 +827,7 @@ footer .transparent-input:focus {
 }
 
 h6 {
+  padding-bottom: 69px;
   padding-top: 128px;
   color: #BF1E2E;
   font-size: 34px;
@@ -1238,7 +1259,7 @@ color: #fff;
 }
 
 .contacts-section-page3 {
-  height: 456px;
+  height: 496px;
   background-color: #ffffff;
 }
 
@@ -1520,11 +1541,26 @@ color: #fff;
 
 
 
+@media (min-width: 1440px) and (max-width: 2560px) {
+  .equipment-image-one {
+    width: 623px;
+  }
+  .equipment-image-two {
+    width: 660px;
+  }
+  .equipment-image-three {
+    width: 623px;
+  }
+  .equipment-description-box {
+    width: 660px;;
+  }
+}
 
-
-
-
-
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .services-text {
+    font-size: 17px;
+  }
+}
 
 @media (min-width: 992px) and (max-width: 1400px) {
   .hero-description-line {
