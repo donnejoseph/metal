@@ -53,27 +53,34 @@
                   <a class="nav-link" aria="page" href="#">О компании</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#">Контакты</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" aria="true">Disabled</a>
+                  <a class="nav-link" aria="true">Токарные работы</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" href="#">Фрезерные работы</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" aria="true">Лазерная резка</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" aria="true">Disabled</a>
+                  <a class="nav-link" aria="true">Плазменная резка</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria="true">Disabled</a>
+                <li class="nav-item"></li>
+                  <a class="nav-link" aria="true">Сварочные работы</a>
                 </li>
               </ul>
+              <!-- Помещаем блок menu-phone внутрь navbar-collapse -->
+              <div class="row">
+                <div class="col-12 text-center menu-phone">
+                  +7 909 069 08 88
+                </div>
+              </div>
             </div>
           </div>
         </nav>
+        
         <!-- Mobile menu end -->
 
         <!-- Dekstop menu start -->
@@ -97,11 +104,10 @@
             </div>
           </div>
           <div class="col-3 d-flex align-items-center justify-content-end">
-             <!-- Кнопка-триггер модального окна -->
+            <!-- Кнопка-триггер модального окна -->
             <button
               class="btn btn-primary cta-button cta-button-desktop"
               type="button"
-            
               data-bs-toggle="modal"
               data-bs-target="#callBackModal"
             >
@@ -123,7 +129,10 @@
                       <h1 class="modal-title fs-5" id="callBackModalLabel">
                         Заказать звонок
                       </h1>
-                      <p class="modal-instructions">Заполните форму ниже и наш специалист свяжется с вами в ближайшее время и проконсультирует</p>
+                      <p class="modal-instructions">
+                        Заполните форму ниже и наш специалист свяжется с вами в
+                        ближайшее время и проконсультирует
+                      </p>
                     </div>
                     <button
                       type="button"
@@ -135,15 +144,30 @@
                   <div class="modal-body">
                     <div class="row">
                       <div class="col">
-                        <input type="text" class="form-control name-input" placeholder="Ваше Имя*" aria-label="Имя">
+                        <input
+                          type="text"
+                          class="form-control name-input"
+                          placeholder="Ваше Имя*"
+                          aria-label="Имя"
+                        />
                       </div>
                       <div class="col">
-                        <input type="text" class="form-control phone-input" placeholder="Номер Телефона*" aria-label="Номер Телефона">
+                        <input
+                          type="text"
+                          class="form-control phone-input"
+                          placeholder="Номер Телефона*"
+                          aria-label="Номер Телефона"
+                        />
                       </div>
                     </div>
                     <div class="row">
                       <div class="col">
-                        <input type="text" class="form-control message-input" placeholder="Напишите ваше сообщение или оставьте поле пустым" aria-label="Сообщение">
+                        <input
+                          type="text"
+                          class="form-control message-input"
+                          placeholder="Напишите ваше сообщение или оставьте поле пустым"
+                          aria-label="Сообщение"
+                        />
                       </div>
                       <div div class="mb-3 form-check">
                         <input
@@ -151,22 +175,30 @@
                           class="form-check-input custom-checkbox"
                           id="exampleCheck1"
                         />
-                        <label class="form-check-label window" for="exampleCheck1"
-                          >Даю согласие на обработку персональных данных</label>
+                        <label
+                          class="form-check-label window"
+                          for="exampleCheck1"
+                          >Даю согласие на обработку персональных данных</label
+                        >
                       </div>
                     </div>
                     <div class="row">
                       <div class="col">
-                        <input type="text" class="form-control file-input" placeholder="Выберите Файл*" aria-label="Имя">
+                        <input
+                          type="text"
+                          class="form-control file-input"
+                          placeholder="Выберите Файл*"
+                          aria-label="Имя"
+                        />
                       </div>
                       <div class="col">
                         <button
-                        type="button"
-                        class="btn btn-secondary upload-button"
-                        data-bs-dismiss="modal"
-                      >
-                        Загрузить
-                      </button>
+                          type="button"
+                          class="btn btn-secondary upload-button"
+                          data-bs-dismiss="modal"
+                        >
+                          Загрузить
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -233,7 +265,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col">
+                <div class="col-12">
                   <button class="btn btn-primary cta-button cta-button-hero">
                     <span class="cta-button-text">Оставить заявку</span
                     ><i class="fas fa-arrow-right button-arrow"></i>
@@ -254,7 +286,7 @@
 
     <!--Section info start-->
     <section class="info">
-      <div class="container">
+      <div class="container info-container">
         <div class="row">
           <div class="col-12">
             <h2 class="info-title">
@@ -286,10 +318,14 @@
         </div>
 
         <div class="row">
-          <div class="col d-flex">
+          <div class="col-md-12 d-flex">
             <button class="company-info-button">
               <div class="button-content">
-                <span class="button-text" onclick="window.location.href='/src/about_company.html';">подробнее о компании</span>
+                <span
+                  class="button-text"
+                  onclick="window.location.href='/src/about_company.html';"
+                  >подробнее о компании</span
+                >
 
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/55b4085fc96d318e9160d49ca75b660f08dce2238392ffdce8fcd3f386997923?placeholderIfAbsent=true&apiKey=6f5ed989a9014907ba5f434cdcea5a48"
@@ -308,10 +344,10 @@
     <section class="services-section">
       <div class="container services">
         <div class="row">
-          <div class="col-6">
+          <div class="col-md-6">
             <h3>наши услуги</h3>
           </div>
-          <div class="col-6 d-flex justify-content-end">
+          <div class="col-md-6 d-flex justify-content-end">
             <p class="services-description">
               Огромный опыт и команда специалистов позволяют нам предложить
               <br />
@@ -373,7 +409,7 @@
     <section class="equipment-section">
       <div class="container equipment">
         <div class="row">
-          <div class="col-6">
+          <div class="col-md-6">
             <div class="equipment-description-box">
               <h4>наше оборудование</h4>
               <p class="equipment-description">
@@ -397,15 +433,15 @@
               </p>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-md-6">
             <div class="equipment-image-one"></div>
           </div>
         </div>
         <div class="row">
-          <div class="col-6">
+          <div class="col-md-6">
             <div class="equipment-image-two"></div>
           </div>
-          <div class="col-6">
+          <div class="col-md-6">
             <div class="equipment-image-three"></div>
           </div>
         </div>
@@ -456,7 +492,7 @@
         <div class="row">
           <div class="col">
             <form class="row">
-              <div class="col-4 mb-3">
+              <div class="col-md-4 mb-3">
                 <input
                   type="text"
                   id="name"
@@ -478,7 +514,7 @@
                 />
               </div>
 
-              <div class="col-4 mb-3">
+              <div class="col-md-4 mb-3">
                 <input
                   type="text-input"
                   id="text-input"
@@ -496,7 +532,7 @@
                   >
                 </div>
               </div>
-              <div class="col-4 mb-3">
+              <div class="col-md-4 mb-3">
                 <p class="text-contacts">
                   Мы ответим на все интересующие вас вопросы в рабочее время:
                   понедельник - пятница с 8:00 до 17:00
@@ -521,7 +557,7 @@
     <section class="contacts-section">
       <div class="container contacts-container">
         <div class="row">
-          <div class="col-5 ">
+          <div class="col-md-5">
             <h5>КОНТАКТЫ</h5>
             <div class="contacts-company-name">ООО “ГАЛСЕРВИС”</div>
             <div class="phone-wrapper">
@@ -542,13 +578,82 @@
               >
             </div>
           </div>
-          <div class="col-7">
+          <div class="col-md-7">
             <div class="map-zaglushka"></div>
           </div>
         </div>
       </div>
     </section>
     <!-- Contacts section end -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="footer-logo"></div>
+            <p class="footer-number">+7 909 069 08 88</p>
+            <p class="footer-email">gal-service@yandex.ru</p>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-menu-top">
+              <a href="#">О компании</a>
+            </div>
+            <div class="footer-menu">
+              <a href="#">Услуги</a>
+            </div>
+            <div class="footer-menu">
+              <a href="#">Контакты</a>
+            </div>
+            <div class="footer-menu">
+              <a href="#">Политика конфиденциальности</a>
+            </div>
+            <div class="footer-menu mb-3">
+              <a href="#">Заказать звонок</a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-menu-top">
+              <a href="#">Токарные работы</a>
+            </div>
+            <div class="footer-menu-jobs">
+              <a href="#">Фрезерные работы</a>
+            </div>
+            <div class="footer-menu-jobs">
+              <a href="#">Сварочные работы</a>
+            </div>
+            <div class="footer-menu-jobs">
+              <a href="#">Лазерная резка металла</a>
+            </div>
+            <div class="footer-menu-jobs">
+              <a href="#">Плазменная резка металла</a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <form class="footer-form">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control transparent-input"
+                  id="exampleInputName"
+                  placeholder="Имя"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control transparent-input"
+                  id="phone"
+                  placeholder="Телефон"
+                />
+              </div>
+              <button class="call-request-button" type="button">
+                <span class="visually-hidden">Request a call</span>
+                ЗАКАЗАТЬ ЗВОНОК
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Подключение Bootstrap JS -->
 
@@ -562,73 +667,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
   </body>
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-3">
-          <div class="footer-logo"></div>
-          <p class="footer-number">+7 909 069 08 88</p>
-          <p class="footer-email">gal-service@yandex.ru</p>
-        </div>
-        <div class="col-3">
-          <div class="footer-menu-top">
-            <a href="#">О компании</a>
-          </div>
-          <div class="footer-menu">
-            <a href="#">Услуги</a>
-          </div>
-          <div class="footer-menu">
-            <a href="#">Контакты</a>
-          </div>
-          <div class="footer-menu">
-            <a href="#">Политика конфиденциальности</a>
-          </div>
-          <div class="footer-menu">
-            <a href="#">Заказать звонок</a>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="footer-menu-top">
-            <a href="#">Токарные работы</a>
-          </div>
-          <div class="footer-menu-jobs">
-            <a href="#">Фрезерные работы</a>
-          </div>
-          <div class="footer-menu-jobs">
-            <a href="#">Сварочные работы</a>
-          </div>
-          <div class="footer-menu-jobs">
-            <a href="#">Лазерная резка металла</a>
-          </div>
-          <div class="footer-menu-jobs">
-            <a href="#">Плазменная резка металла</a>
-          </div>
-        </div>
-        <div class="col-3">
-          <form>
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control transparent-input"
-                id="exampleInputName"
-                placeholder="Имя"
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control transparent-input"
-                id="phone"
-                placeholder="Телефон"
-              />
-            </div>
-            <button class="call-request-button" type="button">
-              <span class="visually-hidden">Request a call</span>
-              ЗАКАЗАТЬ ЗВОНОК
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </footer>
 </html>
